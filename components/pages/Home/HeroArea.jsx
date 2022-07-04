@@ -66,14 +66,21 @@ function HeroArea() {
                         quis .
                       </p>
                       <div className="hero-btns">
-                        <Link href="/package" className="button-fill-primary">
-                          <a onClick={scrollTop}>View Adventure</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-fill-primary"
+                          >
+                            View Adventure
+                          </a>
                         </Link>
-                        <Link
-                          href="/package"
-                          className="button-outlined-primary"
-                        >
-                          <a onClick={scrollTop}>Take A Tour</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-outlined-primary"
+                          >
+                            Take A Tour
+                          </a>
                         </Link>
                       </div>
                     </div>
@@ -99,14 +106,21 @@ function HeroArea() {
                         quis .
                       </p>
                       <div className="hero-btns">
-                        <Link href="/package" className="button-fill-primary">
-                          <a onClick={scrollTop}>View Adventure</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-fill-primary"
+                          >
+                            View Adventure
+                          </a>
                         </Link>
-                        <Link
-                          href="/package"
-                          className="button-outlined-primary"
-                        >
-                          <a onClick={scrollTop}> Take A Tour</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-outlined-primary"
+                          >
+                            Take A Tour
+                          </a>
                         </Link>
                       </div>
                     </div>
