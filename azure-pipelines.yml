@@ -15,7 +15,7 @@ pr:
 variables:
   azureSubscription: "FrontEndARM"
 
-  RgName: $(RGNAME)
+  RgName: $(tourRGname)
 
   # names are based on created azure web app
   webAppName: "tourxpro"
