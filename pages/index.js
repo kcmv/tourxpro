@@ -1,16 +1,10 @@
-import React from 'react'
+import React from "react";
+import Layout from "../components/layout/MainLayout"
 
-const index = () => {
+const index = (props) => {
   return (
-    <div>index</div>
+    <Layout/>
   )
-}
+};
 
-export default index
-
-export async function getServerSideProps(context) {
-    console.log("serverside")
-    return {
-      props: {}, // will be passed to the page component as props
-    }
-  }
+export default index;
