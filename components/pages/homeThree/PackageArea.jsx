@@ -120,7 +120,6 @@ function PackageCardBeta(props) {
             <div className="book-btn">
               <Link href="/package-details" onClick={scrollTop}>
                 <a>
-                  {" "}
                   Book Now <i className="bx bxs-right-arrow-alt" />
                 </a>
               </Link>

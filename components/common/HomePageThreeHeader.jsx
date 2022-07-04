@@ -271,7 +271,9 @@ function HomePageThreeHeader() {
                       className="has-child-menu"
                       onClick={() => dispatch({ type: "homeOne" })}
                     >
-                      <a href="#">Home</a>
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
                       <i className="fl flaticon-plus">+</i>
                       <ul
                         className={

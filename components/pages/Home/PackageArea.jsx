@@ -22,8 +22,8 @@ function PackageArea() {
             </div>
             <div className="col-lg-4">
               <div className="package-btn text-lg-end">
-                <Link href="/package" className="button-fill-primary">
-                  <a onClick={scrolltop}> View All Tour</a>
+                <Link href="/package">
+                  <a onClick={scrolltop} className="button-fill-primary"> View All Tour</a>
                 </Link>
               </div>
             </div>

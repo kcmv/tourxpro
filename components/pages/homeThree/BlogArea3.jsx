@@ -19,12 +19,10 @@ function BlogArea3() {
             </div>
             <div className="col-lg-6 col-sm-10">
               <div className="package-btn text-lg-end">
-                <Link
-                  href="/blog-sidebar"
-                  onClick={scrollTop}
-                  className="button-fill-primary all-package-btn"
-                >
-                  <a>View All Post</a>
+                <Link href="/blog-sidebar" onClick={scrollTop}>
+                  <a className="button-fill-primary all-package-btn">
+                    View All Post
+                  </a>
                 </Link>
               </div>
             </div>

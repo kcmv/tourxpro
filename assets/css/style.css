@@ -6160,7 +6160,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .testimonial-style-two {
-  background: url("/../../public/images/banner/testi-bg.png") no-repeat center;
+  background: url("../../public/images/banner/testi-bg.png") no-repeat center;
   background-size: cover;
   padding: 70px 0 70px 0;
 }
@@ -8247,8 +8247,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .upcoming-tour-area {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("/../../public/images/package/upcoming-bg.png");
-  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("/../../public/images/package/upcoming-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../public/images/package/upcoming-bg.png");
+  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../public/images/package/upcoming-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9876,8 +9876,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .testimonial-style-three {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("/../../public/images/reviewer/review3-bg.png");
-  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("/../../public/images/reviewer/review3-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../public/images/reviewer/review3-bg.png");
+  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../public/images/reviewer/review3-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10372,7 +10372,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .more-update-section {
-  background: linear-gradient(91.22deg, rgba(0, 5, 15, 0.8) 24.54%, rgba(0, 5, 15, 0.2) 100%), url("/../../public/images/banner/update-bg.png");
+  background: linear-gradient(91.22deg, rgba(0, 5, 15, 0.8) 24.54%, rgba(0, 5, 15, 0.2) 100%), url("../../public/images/banner/update-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 30px;

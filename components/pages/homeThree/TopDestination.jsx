@@ -49,7 +49,7 @@ function TopDestination() {
     <>
     <div className="destination-item">
                 <div className="destination-img">
-                  <img src={`${process.env.NEXT_PUBLIC_BASE_URL} ${props.image}`} alt="designation img" />
+                  <img src={`${props.image}`} alt="designation img" />
                 </div>
                 <div className="destination-overlay">
                   <div className="content">

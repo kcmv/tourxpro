@@ -157,7 +157,9 @@ function HomePageTwoHeader() {
                   </div>
                   <ul>
                     <li className="has-child-menu">
-                      <a href="#">Home</a>
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
                       <i className="fl flaticon-plus">+</i>
                       <ul className="sub-menu">
                         <li>

@@ -18,12 +18,8 @@ function LetesBlogArea() {
             </div>
             <div className="col-lg-5">
               <div className="blog-btn text-lg-end">
-                <Link
-                  onClick={scrollTop}
-                  href="/blog"
-                  className="button-fill-round"
-                >
-                  <a>View All</a>
+                <Link onClick={scrollTop} href="/blog">
+                  <a className="button-fill-round">View All</a>
                 </Link>
               </div>
             </div>

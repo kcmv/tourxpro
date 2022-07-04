@@ -42,7 +42,7 @@ function Packages() {
             </div>
             <div className="col-lg-4 col-md-6">
               <PackageCardAlpha
-                image= "/images/package/p-alpha4.png"
+                image="/images/package/p-alpha4.png"
                 date=" 2 Day & 3 Night"
                 price="$75.00"
                 title="Sed ultricies sapien arcu, sed cong sapien dignissim id."
@@ -50,7 +50,7 @@ function Packages() {
             </div>
             <div className="col-lg-4 col-md-6">
               <PackageCardAlpha
-                image= "/images/package/p-alpha5.png"
+                image="/images/package/p-alpha5.png"
                 date=" 7 Day & 8 Night"
                 price="$275.00"
                 title="Pellentesque morbi malesua tristique senectus et netus et."
@@ -66,12 +66,8 @@ function Packages() {
             </div>
           </div>
           <div className="package-page-btn text-center mt-50">
-            <Link
-              onClick={scrollTop}
-              href="/package"
-              className="button-fill-round"
-            >
-              <a>View All</a>
+            <Link onClick={scrollTop} href="/package">
+              <a className="button-fill-round">View All</a>
             </Link>
           </div>
         </div>

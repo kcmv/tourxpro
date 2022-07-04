@@ -24,12 +24,8 @@ function NewsLetterArea() {
                     Don’t worry! It’s not Spam
                   </h6>
                   <div className="explore-btn">
-                    <Link
-                      onClick={scrollTop}
-                      href="/package"
-                      className="button-fill-round"
-                    >
-                      <a>Explore Now</a>
+                    <Link onClick={scrollTop} href="/package">
+                      <a className="button-fill-round">Explore Now</a>
                     </Link>
                   </div>
                 </div>

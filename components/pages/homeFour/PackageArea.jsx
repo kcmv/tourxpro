@@ -94,7 +94,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -150,7 +149,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -208,7 +206,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -266,7 +263,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -323,7 +319,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -343,9 +338,8 @@ function PackageArea() {
             <Link
               href={`${process.env.NEXT_PUBLIC_BASE_URL}/package`}
               onClick={scrollTop}
-              className="button-fill-primary"
             >
-              <a> View All Tours</a>
+              <a className="button-fill-primary"> View All Tours</a>
             </Link>
           </div>
         </div>

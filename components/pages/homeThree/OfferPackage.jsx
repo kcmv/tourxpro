@@ -186,12 +186,8 @@ function OfferPackage() {
                     </div>
                   </div>
                   <div className="package-page-btn text-center mt-60">
-                    <Link
-                      href="/package"
-                      onClick={scrollTop}
-                      className="button-fill-round"
-                    >
-                      <a>View All Offer</a>
+                    <Link href="/package" onClick={scrollTop}>
+                      <a className="button-fill-round">View All Offer</a>
                     </Link>
                   </div>
                 </div>
@@ -239,12 +235,8 @@ function OfferPackage() {
                     </div>
                   </div>
                   <div className="package-page-btn text-center mt-60">
-                    <Link
-                      href="/package"
-                      onClick={scrollTop}
-                      className="button-fill-round"
-                    >
-                      <a>View All Offer</a>
+                    <Link href="/package" onClick={scrollTop}>
+                      <a className="button-fill-round">View All Offer</a>
                     </Link>
                   </div>
                 </div>

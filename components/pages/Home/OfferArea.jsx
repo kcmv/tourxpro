@@ -74,8 +74,8 @@ function OfferArea() {
           </div>
           <div className="row text-center">
             <div className="package-bottom-btn">
-              <Link href="/package" className="button-fill-primary">
-                <a onClick={scrollTop}>View All Offer</a>
+              <Link href="/package" >
+                <a onClick={scrollTop} className="button-fill-primary">View All Offer</a>
               </Link>
             </div>
           </div>

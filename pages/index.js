@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/layout/MainLayout"
+import MainLayout from "../components/layout/MainLayout";
 
-const index = (props) => {
+const index = () => {
   return (
-    <Layout/>
-  )
+      <MainLayout />
+  );
 };
 
 export default index;

@@ -14,7 +14,10 @@ function PackageCardGamma(props) {
             onClick={scrollTop}
             href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-details`}
           >
-           <a> <img src={props.image} alt="PackageIMG" /></a>
+            <a>
+              {" "}
+              <img src={props.image} alt="PackageIMG" />
+            </a>
           </Link>
         </div>
         <div className="package-card-body">
@@ -35,7 +38,9 @@ function PackageCardGamma(props) {
                 onClick={scrollTop}
                 href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-details`}
               >
-              <a>  Book Now <i className="bx bxs-right-arrow-alt" /></a>
+                <a>
+                  Book Now <i className="bx bxs-right-arrow-alt" />
+                </a>
               </Link>
             </div>
             <div className="p-card-info">

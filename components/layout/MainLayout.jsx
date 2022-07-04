@@ -9,7 +9,7 @@ function MainLayout() {
     setLoad(true);
     setTimeout(() => {
       setLoad(false);
-    }, 700);
+    }, 3000);
   }, []);
   return (
     <>
@@ -27,10 +27,3 @@ function MainLayout() {
 }
 
 export default MainLayout;
-
-export async function getServerSideProps(context) {
-  console.log("server side call")
-  return {
-    props: {}, // will be passed to the page component as props
-  }
-}
