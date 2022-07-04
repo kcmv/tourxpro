@@ -13,7 +13,7 @@ pr:
 
 # setting variables
 variables:
-  azureSubscription: $(SubscriptionARM)
+  azureSubscription: "FrontEndARM"
 
   RgName: $(RGNAME)
 
