@@ -9,13 +9,6 @@ function HomePageThreeHeader() {
   const [mobileSideberMenu, setMobileSideberMenu] = useState(0);
 
   useEffect(() => {
-    const isSticky = (e) => {
-      const header = document.querySelector("header");
-      const scrollTop = window.scrollY;
-      scrollTop >= 200
-        ? header.classList.add("sticky")
-        : header.classList.remove("sticky");
-    };
     // Add scroll event when the component is loaded
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -23,13 +16,13 @@ function HomePageThreeHeader() {
     };
   });
   /* Method that will fix header after a specific scrollable */
-  // const isSticky = (e) => {
-  //   const header = document.querySelector("header");
-  //   const scrollTop = window.scrollY;
-  //   scrollTop >= 200
-  //     ? header.classList.add("sticky")
-  //     : header.classList.remove("sticky");
-  // };
+  const isSticky = (e) => {
+    const header = document.querySelector("header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 200
+      ? header.classList.add("sticky")
+      : header.classList.remove("sticky");
+  };
 
   const initialState = { activeMenu: "" };
   const [state, dispatch] = useReducer(reducer, initialState);

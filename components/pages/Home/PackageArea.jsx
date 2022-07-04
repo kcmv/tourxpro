@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import PackageCard from "../packageGrid/PackageCard";
 import Link from "next/link";
 
