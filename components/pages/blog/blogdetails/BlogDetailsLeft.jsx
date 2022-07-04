@@ -14,20 +14,17 @@ function BlogDetailsLeft() {
               <a href="#" className="blog-writer">
                 <i className="bi bi-person-circle" /> By John Smith
               </a>
-              <a href="#"className="blog-comments">
+              <a href="#" className="blog-comments">
                 <i className="bi bi-calendar3" /> Novembar 16, 2021
               </a>
-              <a href="#"className="blog-comments">
+              <a href="#" className="blog-comments">
                 <i className="bi bi-chat-left-quote" /> Comment (08)
               </a>
             </div>
           </div>
 
           <div className="post-thumb">
-            <img
-              src={process.env.NEXT_PUBLIC_BASE_URL + "/images/blog/blog-thumb-xl1.png"}
-              alt="blogDetailsIMG"
-            />
+            <img src="/images/blog/blog-thumb-xl1.png" alt="blogDetailsIMG" />
           </div>
           <div className="post-header"></div>
           <div className="post-body">
@@ -51,10 +48,7 @@ function BlogDetailsLeft() {
             </p>
             <div className="blog-quote-box-one d-flex flex-column flex-sm-row">
               <div className="quote-icon">
-                <img
-                  src={process.env.NEXT_PUBLIC_BASE_URL + "/images/icons/blogquote.svg"}
-                  alt="blogDetailsIMG"
-                />
+                <img src="/images/icons/blogquote.svg" alt="blogDetailsIMG" />
               </div>
               <blockquote>
                 <p>
@@ -76,10 +70,7 @@ function BlogDetailsLeft() {
               Suspendissendt blandit interdum.
             </p>
             <div className="post-innner-image">
-              <img
-                src={process.env.NEXT_PUBLIC_BASE_URL + "/images/blog/blog-d-inner.png"}
-                alt="blogDetailsIMG"
-              />
+              <img src="/images/blog/blog-d-inner.png" alt="blogDetailsIMG" />
             </div>
             <h3 className="sub-title">Things You Can Do to a vibe</h3>
             <p className="mt-1">
@@ -94,10 +85,7 @@ function BlogDetailsLeft() {
             </p>
             <div className="blog-quote-box-two text-center">
               <div className="quote-icon">
-                <img
-                  src={process.env.NEXT_PUBLIC_BASE_URL + "/images/icons/blogquote.svg"}
-                  alt="blogDetailsIMG"
-                />
+                <img src="/images/icons/blogquote.svg" alt="blogDetailsIMG" />
               </div>
               <blockquote>
                 <p>
@@ -121,7 +109,7 @@ function BlogDetailsLeft() {
             </p>
           </div>
           <div className="post-footer flex-wrap flex-md-nowrap">
-            <a href="#"className="post-switcher prev-post">
+            <a href="#" className="post-switcher prev-post">
               <i className="bi bi-chevron-left" /> Previous
             </a>
             <a href="#" className="next-post-link">
@@ -138,12 +126,7 @@ function BlogDetailsLeft() {
           <ul className="comment-list">
             <li className="single-comment d-flex flex-sm-row flex-column ">
               <div className="commmentor">
-                <img
-                  src={
-                    process.env.NEXT_PUBLIC_BASE_URL + "/images/reviewer/commertor2.png"
-                  }
-                  alt="BlogDetails"
-                />
+                <img src="/images/reviewer/commertor2.png" alt="BlogDetails" />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
@@ -182,12 +165,7 @@ function BlogDetailsLeft() {
             </li>
             <li className="single-comment d-flex flex-sm-row flex-column">
               <div className="commmentor">
-                <img
-                  src={
-                    process.env.NEXT_PUBLIC_BASE_URL + "/images/reviewer/commertor3.png"
-                  }
-                  alt="BlogDetails"
-                />
+                <img src="/images/reviewer/commertor3.png" alt="BlogDetails" />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
@@ -226,12 +204,7 @@ function BlogDetailsLeft() {
             </li>
             <li className="single-comment d-flex flex-sm-row flex-column">
               <div className="commmentor">
-                <img
-                  src={
-                    process.env.NEXT_PUBLIC_BASE_URL + "/images/reviewer/commertor1.png"
-                  }
-                  alt="BlogDetails"
-                />
+                <img src="/images/reviewer/commertor1.png" alt="BlogDetails" />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">

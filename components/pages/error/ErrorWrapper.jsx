@@ -14,9 +14,7 @@ function ErrorWrapper() {
               <div className="error-content text-center">
                 <div className="error-vactor text-center">
                   <img
-                    src={
-                      process.env.NEXT_PUBLIC_BASE_URL + "/images/shapes/error-vactor.png"
-                    }
+                    src="/images/shapes/error-vactor.png"
                     alt="ErrorIMG"
                     className="img-fluid"
                   />

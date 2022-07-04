@@ -12,7 +12,6 @@ function StandardCard(props) {
         <div className="blog-thumb">
           <Link href="/blog-details">
             <a onClick={scrollTop}>
-              {" "}
               <img src={props.image} alt="BlogStandardIMG" />
             </a>
           </Link>

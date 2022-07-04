@@ -112,7 +112,10 @@ function TestimonialCardBeta(props) {
       <div className="testimonial-card-beta mx-auto">
         <div className="testimonial-quote-icon">
           <img
-            src={process.env.NEXT_PUBLIC_BASE_URL + "/images/icons/quote-review.svg"}
+            src={
+              process.env.NEXT_PUBLIC_BASE_URL +
+              "/images/icons/quote-review.svg"
+            }
             alt="testimonial-img"
             className="img-fluid"
           />
@@ -121,7 +124,7 @@ function TestimonialCardBeta(props) {
           <div className="testimonial-info">
             <div className="reviewr-info">
               <div className="single-thumb">
-                <img src={`${process.env.NEXT_PUBLIC_BASE_URL} ${props.image}`} alt="" />
+                <img src={` ${props.image}`} alt="" />
               </div>
               <div className="reviwer-info-cotn">
                 <h5 className="reviewer-name">{props.name}</h5>

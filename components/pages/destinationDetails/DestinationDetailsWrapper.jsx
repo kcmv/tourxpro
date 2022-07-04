@@ -13,10 +13,7 @@ function DestinationDetailsWrapper() {
               <div className="destination-details">
                 <div className="dd-thumb">
                   <img
-                    src={
-                      process.env.NEXT_PUBLIC_BASE_URL +
-                      "/images/destination/dd-thumb.png"
-                    }
+                    src="/images/destination/dd-thumb.png"
                     alt="BlogDetailsIMG"
                   />
                 </div>
@@ -48,10 +45,7 @@ function DestinationDetailsWrapper() {
                     <div className="col-sm-6">
                       <div className="dd-inner-group">
                         <img
-                          src={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/destination/dd-img1.png"
-                          }
+                          src="/images/destination/dd-img1.png"
                           alt="BlogDetailsIMG"
                         />
                       </div>
@@ -59,10 +53,7 @@ function DestinationDetailsWrapper() {
                     <div className="col-sm-6">
                       <div className="dd-inner-group">
                         <img
-                          src={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/destination/dd-img2.png"
-                          }
+                          src="/images/destination/dd-img2.png"
                           alt="BlogDetailsIMG"
                         />
                       </div>
@@ -219,108 +210,72 @@ function DestinationDetailsWrapper() {
                     <ul className=" widget-body">
                       <li>
                         <a
-                          href={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/gallary/WidgetfullIMG1.png"
-                          }
+                          href="/images/gallary/WidgetfullIMG1.png"
                           data-fancybox="gallery"
                           data-caption="Caption Here"
                         >
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_BASE_URL +
-                              "/images/gallary/sb-gallary-1.png"
-                            }
+                            src="/images/gallary/sb-gallary-1.png"
                             alt="BlogDetailsIMG"
                           />
                         </a>
                       </li>
                       <li>
                         <a
-                          href={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/gallary/WidgetfullIMG3.png"
-                          }
+                          href="/images/gallary/WidgetfullIMG3.png"
                           data-fancybox="gallery"
                           data-caption="Caption Here"
                         >
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_BASE_URL +
-                              "/images/gallary/sb-gallary-2.png"
-                            }
+                            src="/images/gallary/sb-gallary-2.png"
                             alt="BlogDetailsIMG"
                           />
                         </a>
                       </li>
                       <li>
                         <a
-                          href={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/gallary/WidgetfullIMG5.png"
-                          }
+                          href="/images/gallary/WidgetfullIMG5.png"
                           data-fancybox="gallery"
                           data-caption="Caption Here"
                         >
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_BASE_URL +
-                              "/images/gallary/sb-gallary-3.png"
-                            }
+                            src="/images/gallary/sb-gallary-3.png"
                             alt="BlogDetailsIMG"
                           />
                         </a>
                       </li>
                       <li>
                         <a
-                          href={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/gallary/WidgetfullIMG2.png"
-                          }
+                          href="/images/gallary/WidgetfullIMG2.png"
                           data-fancybox="gallery"
                           data-caption="Caption Here"
                         >
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_BASE_URL +
-                              "/images/gallary/sb-gallary-4.png"
-                            }
+                            src="/images/gallary/sb-gallary-4.png"
                             alt="BlogDetailsIMG"
                           />
                         </a>
                       </li>
                       <li>
                         <a
-                          href={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/gallary/WidgetfullIMG4.png"
-                          }
+                          href="/images/gallary/WidgetfullIMG4.png"
                           data-fancybox="gallery"
                           data-caption="Caption Here"
                         >
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_BASE_URL +
-                              "/images/gallary/sb-gallary-5.png"
-                            }
+                            src="/images/gallary/sb-gallary-5.png"
                             alt="BlogDetailsIMG"
                           />
                         </a>
                       </li>
                       <li>
                         <a
-                          href={
-                            process.env.NEXT_PUBLIC_BASE_URL +
-                            "/images/gallary/WidgetfullIMG6.png"
-                          }
+                          href="/images/gallary/WidgetfullIMG6.png"
                           data-fancybox="gallery"
                           data-caption="Caption Here"
                         >
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_BASE_URL +
-                              "/images/gallary/sb-gallary-6.png"
-                            }
+                            src="/images/gallary/sb-gallary-6.png"
                             alt="BlogDetailsIMG"
                           />
                         </a>

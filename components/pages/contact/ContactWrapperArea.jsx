@@ -9,7 +9,7 @@ function ContactWrapperArea() {
             <div className="col-lg-6">
               <div className="contatc-intro-figure">
                 <img
-                  src={process.env.NEXT_PUBLIC_BASE_URL + "/images/banner/contact-bg.png"}
+                  src="/images/banner/contact-bg.png"
                   alt="ContactBannerIMG"
                   className="img-fluid"
                 />
