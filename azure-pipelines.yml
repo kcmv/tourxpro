@@ -1,0 +1,152 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  - master
+  - development
+
+pr:
+  - master
+  - development
+
+# setting variables
+variables:
+  azureSubscription: $(SubscriptionARM)
+
+  RgName: $(RGNAME)
+
+  # names are based on created azure web app
+  webAppName: "tourxpro"
+
+  # environment name
+  devEnvironmentName: "client_dev"
+  prodEnvironmentName: "client_prod"
+
+  # set vm image
+  vmImageName: "ubuntu-latest"
+
+  # node version
+  nodeVersion: "16.x"
+
+stages:
+  # Build stage
+  - stage: Build
+    displayName: Build stage
+    jobs:
+      - job: BuildJob
+
+        # Set VM to use
+        pool:
+          vmIMage: $(vmImageName)
+        steps:
+          # Install Node
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+            displayName: "Install Node.js"
+
+          - task: PowerShell@2
+            condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/development'))
+            inputs:
+              targetType: "inline"
+              script: |
+                echo '##vso[task.setvariable variable=NEXT_PUBLIC_API]$(base_url_staging)'
+            displayName: Set env for staging
+
+          - task: PowerShell@2
+            condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+            inputs:
+              targetType: "inline"
+              script: |
+                echo '##vso[task.setvariable variable=NEXT_PUBLIC_API]$(base_url)'
+            displayName: Set env for prod
+
+          - task: Cache@2
+            displayName: "Cache .next/cache"
+            inputs:
+              key: next | $(Agent.OS) | yarn.lock
+              path: "$(System.DefaultWorkingDirectory)/.next/cache"
+
+          - script: |
+              yarn install
+              yarn build
+            displayName: "Run install and build"
+
+          - script: |
+              mkdir dist
+              cp public dist
+              cp -a .next dist
+              cp -a package.json dist
+              cp -a server.js dist
+              cp -a node_modules dist
+            displayName: "Upload build file"
+
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: "$(System.DefaultWorkingDirectory)/"
+              includeRootFolder: false
+              archiveType: "zip"
+              archiveFile: "$(Build.ArtifactStagingDirectory)/drop.zip"
+              replaceExistingArchive: true
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+              ArtifactName: "drop"
+              publishLocation: "Container"
+
+    # Deploy stage (Staging)
+  - stage: DeployToStaging
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/development'))
+    jobs:
+      - deployment: Deploy
+        displayName: "Deploy to Dev"
+        environment: $(devEnvironmentName)
+        pool:
+          vmIMage: $(vmImageName)
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureRmWebAppDeployment@4
+                  displayName: "Azure App Service Deploy Staging"
+                  inputs:
+                    ConnectionType: "AzureRM"
+                    azureSubscription: $(azureSubscription)
+                    appType: "webAppLinux"
+                    WebAppName: $(webAppName)
+                    deployToSlotOrASE: true
+                    SlotName: "staging"
+                    ResourceGroupName: $(RgName)
+                    packageForLinux: "$(Pipeline.Workspace)/drop/drop.zip"
+                    RuntimeStack: "NODE|16-lts"
+                    StartupCommand: "yarn start"
+
+    # Deploy stage (Production) test
+  - stage: DeployToProduction
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    jobs:
+      - deployment: Deploy
+        displayName: "Deploy to Production"
+        environment: $(prodEnvironmentName)
+        pool:
+          vmIMage: $(vmImageName)
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureRmWebAppDeployment@4
+                  displayName: "Azure App Service Deploy Production"
+                  inputs:
+                    ConnectionType: "AzureRM"
+                    azureSubscription: $(azureSubscription)
+                    appType: "webAppLinux"
+                    WebAppName: $(webAppName)
+                    ResourceGroupName: $(RgName)
+                    packageForLinux: "$(Pipeline.Workspace)/drop/drop.zip"
+                    RuntimeStack: "NODE|16-lts"
+                    StartupCommand: "yarn start"
