@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 // import { Link, NavLink } from "react-router-dom";
 import Link from "next/link";
 
-function HomePageTwoHeader() {
+function HomePageTwoHeader({ data }) {
+  const { title, keywords, description, image } = data;
   const [isCatagoryActive, setCatagoryActive] = useState(false);
   const [isUserDropdown, setUserDropdown] = useState(false);
   const [mobileSideberMenu, setMobileSideberMenu] = useState(0);
@@ -48,6 +50,32 @@ function HomePageTwoHeader() {
   };
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+          key="canonical"
+        />
+        <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="keywords" content={keywords} key="keywords" />
+        <meta name="description" content={description} key="desc" />
+        <meta property="og:title" content="TourXPro - Travels Tourism Agency" />
+        <meta property="og:image" content={image} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="TourXPro - Travels Tourism Agency"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="ROBOTS" content="FOLLOW,INDEX" />
+      </Head>
       <div
         className={`${"category-sidebar-wrapper"} ${
           isCatagoryActive === 1 ? "category-active" : ""

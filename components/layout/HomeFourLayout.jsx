@@ -4,7 +4,7 @@ import Footer from "../common/Footer";
 import Loading from "../common/Loading";
 import HeaderFour from "../pages/homeFour/HeaderFour";
 
-function HomeFourLayout() {
+function HomeFourLayout({data}) {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     setLoad(true);
@@ -18,7 +18,7 @@ function HomeFourLayout() {
         <Loading />
       ) : (
         <>
-          <HeaderFour />
+          <HeaderFour data={data}/>
           <HomeFour />
           <Footer className="footer-area" />
         </>

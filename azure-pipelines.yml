@@ -9,7 +9,6 @@ trigger:
 
 pr:
   - master
-  - development
 
 # setting variables
 variables:

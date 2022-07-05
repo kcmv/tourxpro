@@ -3,8 +3,15 @@ import React from "react";
 import PackageGrid from "../components/pages/packageGrid/PackageGrid";
 
 const index = () => {
+  const data = {
+    title: "Package | TourXPro - Travels Tourism Agency",
+    keywords: "Travel, Explore Top Destination",
+    description:
+      "Pellentesque accumsan magna in augue sagittis, non fringilla eros molestie. Sed feugiat mi nec ex vehicula, nec vestibulum orci semper. Class aptent",
+    image: "/public/images/meta-images/home-style1.jpg",
+  };
   return (
-    <LayoutWrapper>
+    <LayoutWrapper data={data}>
       <PackageGrid />
     </LayoutWrapper>
   );
