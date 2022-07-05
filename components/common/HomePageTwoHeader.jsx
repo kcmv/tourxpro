@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 // import { Link, NavLink } from "react-router-dom";
 import Link from "next/link";
+import Image from "next/image";
 
 function HomePageTwoHeader({ data }) {
   const { title, keywords, description, image } = data;
@@ -93,7 +94,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate1.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate1.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Adventure</h5>
                 </a>
@@ -103,7 +109,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate2.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate2.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Group Tour</h5>
                 </a>
@@ -113,7 +124,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate3.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate3.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Couple Tour</h5>
                 </a>
@@ -123,7 +139,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate4.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate4.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -133,7 +154,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate5.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate5.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Honeymoon</h5>
                 </a>
@@ -143,7 +169,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate6.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate6.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Sea Beach</h5>
                 </a>
@@ -153,7 +184,12 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate7.svg" alt="images" />
+                    <Image
+                      src="/images/icons/cate7.svg"
+                      width={100}
+                      height={30}
+                      alt="images"
+                    />
                   </div>
                   <h5>Mountain Tour</h5>
                 </a>
@@ -179,7 +215,12 @@ function HomePageTwoHeader({ data }) {
                   <div className="inner-logo d-xl-none text-center">
                     <Link href="/">
                       <a onClick={scrollTop}>
-                        <img src="/images/logo.png" alt="Logo" />
+                        <Image
+                          src="/images/logo.png"
+                          height={30}
+                          width={170}
+                          alt=""
+                        />
                       </a>
                     </Link>
                   </div>
@@ -337,7 +378,12 @@ function HomePageTwoHeader({ data }) {
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <img src={"/images/logo-w.png"} alt="logo" />
+                      <Image
+                        src="/images/logo-w.png"
+                        height={25}
+                        width={170}
+                        alt="logo"
+                      />
                     </a>
                   </Link>
                   <div className="mobile-menu d-flex ">

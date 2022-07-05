@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function GuideCardAlpha(props) {
@@ -5,7 +6,7 @@ function GuideCardAlpha(props) {
     <>
       <div className="guide-card-alpha">
         <div className="guide-image">
-          <img src={props.image} alt="images" />
+          <Image src={props.image} layout="responsive" height={7.7} width={10} alt="images"/>
           <ul className="guide-social-links">
             <li>
               <a

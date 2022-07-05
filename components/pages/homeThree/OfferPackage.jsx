@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const scrollTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -256,7 +257,7 @@ function OfferPackageCardBeta(props) {
         <div className="package-thumb">
           <Link href="/package-details" onClick={scrollTop}>
             <a>
-              <img src={`${props.image}`} alt="" />
+              <Image src={props.image} layout="responsive" height={8} width={10} alt="" />
             </a>
           </Link>
           <p className="card-lavel">

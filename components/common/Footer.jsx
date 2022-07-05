@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SRLWrapper } from "simple-react-lightbox";
+import Image from "next/image";
 
 function Footer(props) {
   // smooth scrol
@@ -15,7 +16,13 @@ function Footer(props) {
       <div className={props.className}>
         <div className="footer-main-wrapper">
           <div className="footer-vactor">
-            <img src="/images/banner/footer-bg.png" alt="FooterIMG" />
+            <Image
+              src="/images/banner/footer-bg.png"
+              layout="responsive"
+              width={100}
+              height={100}
+              alt="FooterIMG"
+            />
           </div>
           <div className="container">
             <div className="row justify-content-center g-4">
@@ -162,8 +169,11 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <img
+                            <Image
                               src="/images/gallary/fg-1.png"
+                              width={200}
+                              height={145}
+                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -174,8 +184,11 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <img
+                            <Image
                               src="/images/gallary/fg-2.png"
+                              width={200}
+                              height={145}
+                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -186,8 +199,11 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <img
+                            <Image
                               src="/images/gallary/fg-3.png"
+                              width={200}
+                              height={145}
+                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -198,8 +214,11 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <img
+                            <Image
                               src="/images/gallary/fg-4.png"
+                              width={200}
+                              height={145}
+                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -210,8 +229,11 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <img
+                            <Image
                               src="/images/gallary/fg-5.png"
+                              width={200}
+                              height={145}
+                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -222,8 +244,11 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <img
+                            <Image
                               src="/images/gallary/fg-6.png"
+                              width={200}
+                              height={145}
+                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -238,17 +263,17 @@ function Footer(props) {
               <h5>Contact Us:</h5>
               <ul className="footer-contact-list">
                 <li>
-                  <i className="bi bi-telephone-x" />{" "}
+                  <i className="bi bi-telephone-x" />
                   <a rel="noopener noreferrer" href="tel:+1 763-227-5032">
                     +1 763-227-5032
                   </a>
                 </li>
                 <li>
-                  <i className="bi bi-envelope-open" />{" "}
+                  <i className="bi bi-envelope-open" />
                   <a href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li>
-                  <i className="bi bi-geo-alt" />{" "}
+                  <i className="bi bi-geo-alt" />
                   <a href="#">2752 Willison Street Eagan, United State</a>
                 </li>
               </ul>
@@ -261,7 +286,7 @@ function Footer(props) {
               <div className="col-lg-4 col-md-6 order-lg-1 order-3 ">
                 <div className="copyright-link text-lg-start text-center">
                   <p>
-                    Copyright 2022 TourXPro | Design By{" "}
+                    Copyright 2022 TourXPro | Design By
                     <a
                       rel="noopener noreferrer"
                       href="https://www.egenslab.com/"
@@ -276,7 +301,7 @@ function Footer(props) {
                 <div className="footer-logo text-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <img src="/images/logo-w.png" alt="FooterIMG" />
+                      <Image src="/images/logo-w.png" width={150} height={18} alt="footerIMG" />
                     </a>
                   </Link>
                 </div>

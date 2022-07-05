@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function PackageArea() {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -25,11 +26,17 @@ function PackageArea() {
                 <div className="package-thumb">
                   <Link href="package-details">
                     <a onClick={scrollTop}>
-                      <img src="/images/package/best-s1.png" alt="" />
+                      <Image
+                        src="/images/package/best-s1.png"
+                        height={20}
+                        width={30}
+                        layout="responsive"
+                        alt=""
+                      />
                     </a>
                   </Link>
                   <p className="card-lavel">
-                    <i className="bi bi-clock" />{" "}
+                    <i className="bi bi-clock" />
                     <span>3 Day &amp; 2 night</span>
                   </p>
                 </div>
@@ -67,7 +74,13 @@ function PackageArea() {
                     href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-details`}
                   >
                     <a onClick={scrollTop}>
-                      <img src="/images/package/best-s2.png" alt="" />
+                      <Image
+                        src="/images/package/best-s2.png"
+                        height={20}
+                        width={30}
+                        layout="responsive"
+                        alt=""
+                      />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -116,11 +129,11 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s3.png"
-                        }
+                      <Image
+                        src="/images/package/best-s3.png"
+                        height={20}
+                        width={30}
+                        layout="responsive"
                         alt=""
                       />
                     </a>
@@ -171,12 +184,11 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      {" "}
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s4.png"
-                        }
+                      <Image
+                        src="/images/package/best-s4.png"
+                        height={20}
+                        width={30}
+                        layout="responsive"
                         alt=""
                       />
                     </a>
@@ -228,12 +240,11 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      {" "}
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s5.png"
-                        }
+                      <Image
+                        src="/images/package/best-s5.png"
+                        height={20}
+                        width={30}
+                        layout="responsive"
                         alt=""
                       />
                     </a>
@@ -285,12 +296,11 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      {" "}
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s6.png"
-                        }
+                      <Image
+                        src="/images/package/best-s6.png"
+                        height={20}
+                        width={30}
+                        layout="responsive"
                         alt=""
                       />
                     </a>

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function BlogArea3() {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -33,7 +34,13 @@ function BlogArea3() {
                 <div className="blog-thumb">
                   <Link href="/blog-details" onClick={scrollTop}>
                     <a>
-                      <img src="images/blog/home3-blog1.png" alt="" />
+                      <Image
+                        src="/images/blog/home3-blog1.png"
+                        height={23}
+                        width={30}
+                        layout="responsive"
+                        alt=""
+                      />
                     </a>
                   </Link>
                   <div className="blog-lavel">
@@ -43,7 +50,7 @@ function BlogArea3() {
                 <div className="blog-content">
                   <div className="blog-body-top">
                     <a href="#" className="blog-writer">
-                      <i className="bi bi-person-circle" /> By John Smith{" "}
+                      <i className="bi bi-person-circle" /> By John Smith
                     </a>
                     <a href="#" className="blog-comments">
                       <i className="bi bi-calendar3" /> Novembar 16, 2021
@@ -65,7 +72,13 @@ function BlogArea3() {
                 <div className="blog-thumb">
                   <Link href="/blog-details" onClick={scrollTop}>
                     <a>
-                      <img src="/images/blog/home3-blog2.png" alt="" />
+                      <Image
+                        src="/images/blog/home3-blog2.png"
+                        height={23}
+                        width={30}
+                        layout="responsive"
+                        alt=""
+                      />
                     </a>
                   </Link>
                   <div className="blog-lavel">
@@ -75,7 +88,7 @@ function BlogArea3() {
                 <div className="blog-content">
                   <div className="blog-body-top">
                     <a href="#" className="blog-writer">
-                      <i className="bi bi-person-circle" /> By John Smith{" "}
+                      <i className="bi bi-person-circle" /> By John Smith
                     </a>
                     <a href="#" className="blog-comments">
                       <i className="bi bi-calendar3" /> Novembar 16, 2021
@@ -84,7 +97,6 @@ function BlogArea3() {
                   <h4 className="blog-title">
                     <Link href="/blog-details" onClick={scrollTop}>
                       <a>
-                        {" "}
                         Mauris commodo massa vel diamnat feugiat sagittis Nunc
                         maxim.
                       </a>
@@ -98,7 +110,13 @@ function BlogArea3() {
                 <div className="blog-thumb">
                   <Link href="/blog-details" onClick={scrollTop}>
                     <a>
-                      <img src="/images/blog/home3-blog3.png" alt="" />
+                      <Image
+                        src="/images/blog/home3-blog3.png"
+                        height={23}
+                        width={30}
+                        layout="responsive"
+                        alt=""
+                      />
                     </a>
                   </Link>
                   <div className="blog-lavel">
@@ -108,7 +126,7 @@ function BlogArea3() {
                 <div className="blog-content">
                   <div className="blog-body-top">
                     <a href="#" className="blog-writer">
-                      <i className="bi bi-person-circle" /> By John Smith{" "}
+                      <i className="bi bi-person-circle" /> By John Smith
                     </a>
                     <a href="#" className="blog-comments">
                       <i className="bi bi-calendar3" /> Novembar 16, 2021
@@ -117,7 +135,6 @@ function BlogArea3() {
                   <h4 className="blog-title">
                     <Link href="/blog-details" onClick={scrollTop}>
                       <a>
-                        {" "}
                         Nulla urna leo, volutpat eu maurisa eget luctus
                         malesuada urna.
                       </a>

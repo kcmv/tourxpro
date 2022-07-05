@@ -4,6 +4,7 @@ import Link from "next/link";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Navigation, Pagination } from "swiper";
+import Image from "next/image";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
@@ -50,7 +51,7 @@ function HeroArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="hero-single-slide">
                   <div className="hero-highlighted-bg">
-                    <img src="/images/banner/bg-highlight1.png" alt="images" />
+                    <Image src="/images/banner/bg-highlight1.png" height={33} width={30} layout="responsive" alt="images" />
                   </div>
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">
@@ -89,7 +90,7 @@ function HeroArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="hero-single-slide">
                   <div className="hero-highlighted-bg">
-                    <img src="/images/banner/bg-highlight2.png" alt="images" />
+                    <Image src="/images/banner/bg-highlight2.png" height={33} width={30} layout="responsive" alt="images" />
                   </div>
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">
@@ -128,7 +129,7 @@ function HeroArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="hero-single-slide">
                   <div className="hero-highlighted-bg">
-                    <img src="/images/banner/bg-highlight3.png" alt="images" />
+                    <Image src="/images/banner/bg-highlight3.png" height={33} width={30} layout="responsive" alt="images" />
                   </div>
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">
@@ -174,7 +175,7 @@ function HeroArea() {
             role="button"
             aria-label="Previous slide"
           >
-            <i className="bi bi-arrow-left" /> Prev{" "}
+            <i className="bi bi-arrow-left" /> Prev
           </div>
           <div
             className="hero-next"

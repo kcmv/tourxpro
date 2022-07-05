@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function BlogCardAlpha(props) {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -9,7 +10,7 @@ function BlogCardAlpha(props) {
         <div className="blog-thumb">
           <Link  href="/blog-details">
             <a onClick={scrollTop}>
-              <img src={props.image} alt="BlogIMG" />
+              <Image src={props.image} height={20} width={30} layout="responsive" alt="BlogIMG" />
             </a>
           </Link>
           <div className="blog-lavel">

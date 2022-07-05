@@ -4,9 +4,10 @@ import Head from "next/head";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
+import Image from "next/image";
 
-function Header({data}) {
-  const { title, keywords, description, image } = data
+function Header({ data }) {
+  const { title, keywords, description, image } = data;
   const [isSearchActive, setSearchActive] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
@@ -16,15 +17,6 @@ function Header({data}) {
   /*useing reducer to manage the active or inactive menu*/
 
   useEffect(() => {
-    /* Method that will fix header after a specific scrollable */
-    const isSticky = (e) => {
-      const header = document.querySelector("header");
-      const scrollTop = window.scrollY;
-      scrollTop >= 200
-        ? header.classList.add("sticky")
-        : header.classList.remove("sticky");
-    };
-
     // Add scroll event when the component is loaded
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -32,13 +24,13 @@ function Header({data}) {
     };
   });
   // /* Method that will fix header after a specific scrollable */
-  // const isSticky = (e) => {
-  //   const header = document.querySelector("header");
-  //   const scrollTop = window.scrollY;
-  //   scrollTop >= 200
-  //     ? header.classList.add("sticky")
-  //     : header.classList.remove("sticky");
-  // };
+  const isSticky = (e) => {
+    const header = document.querySelector("header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 200
+      ? header.classList.add("sticky")
+      : header.classList.remove("sticky");
+  };
 
   const initialState = { activeMenu: "" };
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -119,29 +111,15 @@ function Header({data}) {
           key="canonical"
         />
         <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="keywords" content={keywords} key="keywords" />
+        <meta name="description" content={description} key="desc" />
+        <meta property="og:title" content="TourXPro - Travels Tourism Agency" />
+        <meta property="og:image" content={image} />
+        <meta property="og:description" content={description} />
         <meta
-          name="keywords"
-          content={keywords}
-          key="keywords"
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}`}
         />
-        <meta
-          name="description"
-          content={description}
-          key="desc"
-        />
-        <meta
-          property="og:title"
-          content="TourXPro - Travels Tourism Agency"
-        />
-        <meta
-          property="og:image"
-          content={image}
-        />
-        <meta
-          property="og:description"
-          content={description}
-        />
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_BASE_URL}`} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
@@ -270,7 +248,12 @@ function Header({data}) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate1.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate1.svg"
+                      width={100}
+                      height={30}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Adventure</h5>
                 </a>
@@ -280,7 +263,12 @@ function Header({data}) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate2.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate2.svg"
+                      width={100}
+                      height={28}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Group Tour</h5>
                 </a>
@@ -290,7 +278,12 @@ function Header({data}) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate3.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate3.svg"
+                      width={100}
+                      height={30}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Couple Tour</h5>
                 </a>
@@ -300,7 +293,12 @@ function Header({data}) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate4.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate4.svg"
+                      width={100}
+                      height={30}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -309,9 +307,13 @@ function Header({data}) {
             <div className="col">
               <Link className="category-box" href="/package">
                 <a>
-                  {" "}
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate5.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate5.svg"
+                      width={100}
+                      height={30}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Honeymoon</h5>
                 </a>
@@ -321,7 +323,12 @@ function Header({data}) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate6.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate6.svg"
+                      width={100}
+                      height={30}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Sea Beach</h5>
                 </a>
@@ -331,7 +338,12 @@ function Header({data}) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate7.svg" alt="catagoryIMG" />
+                    <Image
+                      src="/images/icons/cate7.svg"
+                      width={100}
+                      height={25}
+                      alt="catagoryIMG"
+                    />
                   </div>
                   <h5>Mountain Tour</h5>
                 </a>
@@ -426,7 +438,12 @@ function Header({data}) {
                 <div className="logo d-flex justify-content-between align-items-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <img src="/images/logo.png" alt="logo" />
+                      <Image
+                        src="/images/logo.png"
+                        width={200}
+                        height={28}
+                        alt="logo"
+                      />
                     </a>
                   </Link>
                   <div className="d-flex align-items-center gap-4">
@@ -478,7 +495,12 @@ function Header({data}) {
                 >
                   <div className="logo d-xl-none text-center">
                     <a href="#">
-                      <img src="/images/logo.png" alt="catagoryIMG" />
+                      <Image
+                        src="/images/logo.png"
+                        width={200}
+                        height={28}
+                        alt="logo"
+                      />
                     </a>
                   </div>
                   <ul>

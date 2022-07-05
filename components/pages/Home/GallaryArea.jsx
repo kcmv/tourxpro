@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 function GallaryArea() {
@@ -22,70 +23,156 @@ function GallaryArea() {
               <div className="row">
                 <div className="col-lg-4 col-md-4">
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-xl1.png" alt="ImageGallery" />
+                    <Image
+                      src="/images/gallary/g-xl1.png"
+                      height={40}
+                      width={30}
+                      layout="responsive"
+                      alt="ImageGallery"
+                    />
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen04.png"
                     >
-                      <img src="/images/gallary/g-xl1.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-xl1.png"
+                        height={40}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-md1.png" alt="ImageGallery" />
+                    <Image
+                      src="/images/gallary/g-md1.png"
+                      height={21.5}
+                      width={30}
+                      layout="responsive"
+                      alt="ImageGallery"
+                    />
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen06.png"
                     >
-                      <img src="/images/gallary/g-md1.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-md1.png"
+                        height={21.5}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4">
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-sm1.png" alt="ImageGallery" />
+                    <Image
+                      src="/images/gallary/g-sm1.png"
+                      height={19}
+                      width={30}
+                      layout="responsive"
+                      alt="ImageGallery"
+                    />
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen02.png"
                     >
-                      <img src="/images/gallary/g-sm1.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-sm1.png"
+                        height={18}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-sm2.png" alt="ImageGallery" />
+                    <Image
+                        src="/images/gallary/g-sm2.png"
+                        height={18}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen07.png"
                     >
-                      <img src="/images/gallary/g-sm2.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-sm2.png"
+                        height={18}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-md2.png" alt="ImageGallery" />
+                    <Image
+                      src="/images/gallary/g-md2.png"
+                      height={22}
+                      width={30}
+                      layout="responsive"
+                      alt="ImageGallery"
+                    />
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen05.png"
                     >
-                      <img src="/images/gallary/g-md2.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-md2.png"
+                        height={22}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4">
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-xl2.png" alt="ImageGallery" />
+                    <Image
+                      src="/images/gallary/g-xl2.png"
+                      height={40}
+                      width={30}
+                      layout="responsive"
+                      alt="ImageGallery"
+                    />
+
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen01.png"
                     >
-                      <img src="/images/gallary/g-xl2.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-xl2.png"
+                        height={40}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                   <div className="gallary-item">
-                    <img src="/images/gallary/g-md3.png" alt="ImageGallery" />
+                    <Image
+                      src="/images/gallary/g-md3.png"
+                      height={21.5}
+                      width={30}
+                      layout="responsive"
+                      alt="ImageGallery"
+                    />
+
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen03.png"
                     >
-                      <img src="/images/gallary/g-md3.png" alt="ImageGallery" />
+                      <Image
+                        src="/images/gallary/g-md3.png"
+                        height={21.5}
+                        width={30}
+                        layout="responsive"
+                        alt="ImageGallery"
+                      />
                     </a>
                   </div>
                 </div>

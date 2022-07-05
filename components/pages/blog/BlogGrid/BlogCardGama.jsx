@@ -1,6 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
+import Image from "next/image";
 
 function BlogCardGama(props) {
   const scrollTop = () => {
@@ -11,7 +12,9 @@ function BlogCardGama(props) {
       <div className="blog-card-gamma">
         <div className="blog-thumb">
           <Link href="/blog-details">
-           <a> <img src={props.thumbImage} alt="BlogIMG" /></a>
+           <a> 
+            <Image src={props.thumbImage} height={20} width={30} layout="responsive" alt="BlogIMG" />
+           </a>
           </Link>
           <div className="blog-lavel">
             <a href="#">Tourist</a>

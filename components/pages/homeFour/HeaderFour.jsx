@@ -1,6 +1,7 @@
 import React, { useEffect, useReducer, useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 
 function HeaderFour({ data }) {
   const { title, keywords, description, image } = data;
@@ -142,7 +143,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate1.svg" alt="" />
+                   <Image src="/images/icons/cate1.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Adventure</h5>
                 </a>
@@ -152,7 +153,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate2.svg" alt="" />
+                  <Image src="/images/icons/cate2.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Group Tour</h5>
                 </a>
@@ -162,7 +163,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate3.svg" alt="" />
+                  <Image src="/images/icons/cate3.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Couple Tour</h5>
                 </a>
@@ -172,7 +173,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate4.svg" alt="" />
+                  <Image src="/images/icons/cate4.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -182,7 +183,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate5.svg" alt="" />
+                  <Image src="/images/icons/cate5.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Honeymoon</h5>
                 </a>
@@ -196,7 +197,7 @@ function HeaderFour({ data }) {
               >
                 <a>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate6.svg" alt="" />
+                    <Image src="/images/icons/cate6.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Sea Beach</h5>
                 </a>
@@ -210,7 +211,7 @@ function HeaderFour({ data }) {
               >
                 <a>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate7.svg" alt="" />
+                  <Image src="/images/icons/cate7.svg" height={140} width={50} alt=""/>
                   </div>
                   <h5>Mountain Tour</h5>
                 </a>
@@ -226,11 +227,11 @@ function HeaderFour({ data }) {
               <div className="topbar-contact-left">
                 <ul className="contact-list">
                   <li>
-                    <i className="bi bi-telephone-fill" />{" "}
+                    <i className="bi bi-telephone-fill" />
                     <a href="tel:+17632275032">+1 763-227-5032</a>
                   </li>
                   <li>
-                    <i className="bi bi-envelope-fill" />{" "}
+                    <i className="bi bi-envelope-fill" />
                     <a href="mailto:info@example.com">info@example.com</a>
                   </li>
                 </ul>
@@ -271,7 +272,12 @@ function HeaderFour({ data }) {
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <Link href={"#"} onClick={scrollTop}>
                     <a>
-                      <img src="/images/logo-w.png" alt="logo" />
+                    <Image
+                        src="/images/logo-w.png"
+                        height={25}
+                        width={170}
+                        alt="logo"
+                      />
                     </a>
                   </Link>
                   <div className="mobile-menu d-flex ">
@@ -335,7 +341,12 @@ function HeaderFour({ data }) {
                 >
                   <div className="inner-logo d-xl-none text-center">
                     <a href="#">
-                      <img src="/images/logo.png" alt="" />
+                    <Image
+                          src="/images/logo.png"
+                          height={30}
+                          width={170}
+                          alt=""
+                        />
                     </a>
                   </div>
                   <ul>
@@ -607,7 +618,7 @@ function HeaderFour({ data }) {
                   </div>
                   <div className="nav-right-hotline d-xxl-flex d-none">
                     <div className="hotline-icon">
-                      <img src="/images/icons/header-phone.svg" alt="" />
+                    <Image src="/images/icons/header-phone.svg" height={5} width={5} alt="" />
                     </div>
                     <div className="hotline-info">
                       <span>Hot Line Number</span>

@@ -2,6 +2,7 @@ import React from "react";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Navigation, Pagination } from "swiper";
+import Image from "next/image";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 function Testimonial3() {
@@ -124,7 +125,7 @@ function TestimonialCardBeta(props) {
           <div className="testimonial-info">
             <div className="reviewr-info">
               <div className="single-thumb">
-                <img src={` ${props.image}`} alt="" />
+                <Image src={props.image} height={50} width={50} alt="" />
               </div>
               <div className="reviwer-info-cotn">
                 <h5 className="reviewer-name">{props.name}</h5>

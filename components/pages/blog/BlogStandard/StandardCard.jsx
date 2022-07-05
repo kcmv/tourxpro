@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function StandardCard(props) {
   const scrollTop = () => {
@@ -12,7 +13,7 @@ function StandardCard(props) {
         <div className="blog-thumb">
           <Link href="/blog-details">
             <a onClick={scrollTop}>
-              <img src={props.image} alt="BlogStandardIMG" />
+              <Image src={props.image} layout="responsive" height={16} width={30} alt="BlogStandardIMG" />
             </a>
           </Link>
           <div className="blog-lavel">

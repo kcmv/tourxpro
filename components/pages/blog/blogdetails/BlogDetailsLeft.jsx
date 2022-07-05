@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function BlogDetailsLeft() {
@@ -24,7 +25,13 @@ function BlogDetailsLeft() {
           </div>
 
           <div className="post-thumb">
-            <img src="/images/blog/blog-thumb-xl1.png" alt="blogDetailsIMG" />
+            <Image
+              src="/images/blog/blog-thumb-xl1.png"
+              height={50}
+              width={100}
+              layout="responsive"
+              alt="blogDetailsIMG"
+            />
           </div>
           <div className="post-header"></div>
           <div className="post-body">
@@ -48,7 +55,12 @@ function BlogDetailsLeft() {
             </p>
             <div className="blog-quote-box-one d-flex flex-column flex-sm-row">
               <div className="quote-icon">
-                <img src="/images/icons/blogquote.svg" alt="blogDetailsIMG" />
+                <Image
+                  src="/images/icons/blogquote.svg"
+                  height={250}
+                  width={200}
+                  alt="blogDetailsIMG"
+                />
               </div>
               <blockquote>
                 <p>
@@ -70,7 +82,13 @@ function BlogDetailsLeft() {
               Suspendissendt blandit interdum.
             </p>
             <div className="post-innner-image">
-              <img src="/images/blog/blog-d-inner.png" alt="blogDetailsIMG" />
+              <Image
+                src="/images/blog/blog-d-inner.png"
+                height={70}
+                width={200}
+                layout="responsive"
+                alt="blogDetailsIMG"
+              />
             </div>
             <h3 className="sub-title">Things You Can Do to a vibe</h3>
             <p className="mt-1">
@@ -85,7 +103,13 @@ function BlogDetailsLeft() {
             </p>
             <div className="blog-quote-box-two text-center">
               <div className="quote-icon">
-                <img src="/images/icons/blogquote.svg" alt="blogDetailsIMG" />
+                <Image
+                  src="/images/icons/blogquote.svg"
+                  height={15}
+                  width={200}
+                  layout="responsive"
+                  alt="blogDetailsIMG"
+                />
               </div>
               <blockquote>
                 <p>
@@ -126,7 +150,12 @@ function BlogDetailsLeft() {
           <ul className="comment-list">
             <li className="single-comment d-flex flex-sm-row flex-column ">
               <div className="commmentor">
-                <img src="/images/reviewer/commertor2.png" alt="BlogDetails" />
+                <Image
+                  src="/images/reviewer/commertor2.png"
+                  height={170}
+                  width={215}
+                  alt="BlogDetails"
+                />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
@@ -165,7 +194,12 @@ function BlogDetailsLeft() {
             </li>
             <li className="single-comment d-flex flex-sm-row flex-column">
               <div className="commmentor">
-                <img src="/images/reviewer/commertor3.png" alt="BlogDetails" />
+                <Image
+                  src="/images/reviewer/commertor3.png"
+                  height={170}
+                  width={215}
+                  alt="BlogDetails"
+                />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
@@ -204,7 +238,12 @@ function BlogDetailsLeft() {
             </li>
             <li className="single-comment d-flex flex-sm-row flex-column">
               <div className="commmentor">
-                <img src="/images/reviewer/commertor1.png" alt="BlogDetails" />
+                <Image
+                  src="/images/reviewer/commertor1.png"
+                  height={170}
+                  width={215}
+                  alt="BlogDetails"
+                />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
