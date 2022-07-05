@@ -37,7 +37,10 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Script src="/plugin/js/bootstrap.bundle.min.js" strategy="beforeInteractive"></Script>
+          <Script src="/plugin/js/jquery-3.6.0.min.js" strategy="beforeInteractive"></Script>
+          <Script src="/plugin/js/jquery-ui.min.js" strategy="beforeInteractive"></Script>
+          <Script src="/plugin/js/jquery.fancybox.min.js" strategy="beforeInteractive"></Script>
+          <Script src="/plugin/js/bootstrap.bundle.min.js" strategy="lazyOnload"></Script>
         </body>
       </Html>
     );

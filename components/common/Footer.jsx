@@ -169,11 +169,8 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <Image
+                            <img
                               src="/images/gallary/fg-1.png"
-                              width={200}
-                              height={145}
-                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -184,11 +181,8 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <Image
+                            <img
                               src="/images/gallary/fg-2.png"
-                              width={200}
-                              height={145}
-                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -199,26 +193,20 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <Image
+                            <img
                               src="/images/gallary/fg-3.png"
-                              width={200}
-                              height={145}
-                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
                         </div>
                         <div className="footer-gallary-item">
                           <a
-                            href={"/images/gallary/fullsecrron05.png"}
+                            href="/images/gallary/fullsecrron05.png"
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <Image
+                            <img
                               src="/images/gallary/fg-4.png"
-                              width={200}
-                              height={145}
-                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -229,11 +217,8 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <Image
+                            <img
                               src="/images/gallary/fg-5.png"
-                              width={200}
-                              height={145}
-                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -244,11 +229,8 @@ function Footer(props) {
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
-                            <Image
+                            <img
                               src="/images/gallary/fg-6.png"
-                              width={200}
-                              height={145}
-                              layout="responsive"
                               alt="footerIMG"
                             />
                           </a>
@@ -301,7 +283,12 @@ function Footer(props) {
                 <div className="footer-logo text-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <Image src="/images/logo-w.png" width={150} height={18} alt="footerIMG" />
+                      <Image
+                        src="/images/logo-w.png"
+                        width={150}
+                        height={18}
+                        alt="footerIMG"
+                      />
                     </a>
                   </Link>
                 </div>
