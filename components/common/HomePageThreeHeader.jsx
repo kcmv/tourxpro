@@ -79,7 +79,7 @@ function HomePageThreeHeader({ data }) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{`${title} | TourXPro - Travel Tourism Agency`}</title>
         <link
           rel="canonical"
           href={`${process.env.NEXT_PUBLIC_BASE_URL}`}

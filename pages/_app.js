@@ -1,6 +1,6 @@
 import React from "react";
 import SimpleReactLightbox from "simple-react-lightbox";
-import "./index.css";
+import "../styles/index.css"
 
 function MyApp({ Component, pageProps }) {
 

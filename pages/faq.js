@@ -4,7 +4,7 @@ import FaqPage from "../components/pages/faq/FaqPage";
 
 const index = () => {
   const data = {
-    title: "FAQ | TourXPro - Travels Tourism Agency",
+    title: "FAQ",
     keywords: "Travel, Explore Top Destination",
     description:
       "Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis. feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet, sus",

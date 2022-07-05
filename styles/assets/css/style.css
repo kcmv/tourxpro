@@ -935,7 +935,8 @@ accordion defult style
 }
 
 .breadcrumb-style-one {
-  background-image: url("../../public/images/banner/breadcrumb-bg.png");
+  /* background-image: url("../../public/images/banner/breadcrumb-bg.png"); */
+  background-image: url("../../../public/images/banner/breadcrumb-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2193,7 +2194,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .hero-style-three .hero-social .social-list li::before {
-  content: url("../../public/images/icons/list-style.svg");
+  content: url("../../../public/images/icons/list-style.svg");
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2209,8 +2210,8 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-three .slider-bg-1 {
   padding: 300px 0px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../public/images/banner/home3-banner1.png");
-  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../public/images/banner/home3-banner1.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../../public/images/banner/home3-banner1.png");
+  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../../public/images/banner/home3-banner1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2230,8 +2231,8 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-three .slider-bg-3 {
   padding: 300px 0px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../public/images/banner/home3-banner3.png");
-  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../public/images/banner/home3-banner3.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../../public/images/banner/home3-banner3.png");
+  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../../public/images/banner/home3-banner3.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2493,8 +2494,8 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-four .slider-bg-1 {
   padding: 300px 0px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../public/images/banner/banner41.png");
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../public/images/banner/banner41.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../../public/images/banner/banner41.png");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../../public/images/banner/banner41.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2515,8 +2516,8 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-four .slider-bg-2 {
   padding: 300px 0px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../public/images/banner/banner42.png");
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../public/images/banner/banner42.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../../public/images/banner/banner42.png");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../../public/images/banner/banner42.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3191,7 +3192,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   font-size: 110px;
   letter-spacing: 0.08em;
   opacity: 0.3;
-  background: url("../.././public/images/banner/hero-pagination-bg.png");
+  background: url("../../../public/images/banner/hero-pagination-bg.png");
   background-position: bottom;
   background-clip: text;
   color: transparent;
@@ -3290,7 +3291,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 
 .hero-style-one .hero-single-slide .hero-content-bg {
   height: 100%;
-  background: url("../.././public/images/banner/hero-bg1.png") no-repeat center;
+  background: url("../../../public/images/banner/hero-bg1.png") no-repeat center;
   background-size: cover;
   position: relative;
   display: -webkit-box;
@@ -3603,8 +3604,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .hero-style-two {
-  background: url("../.././public/images/banner/hero-two-bg.png"), -webkit-gradient(linear, left top, left bottom, color-stop(100%, #f3f4f5), to(#f3f4f5));
-  background: url("../.././public/images/banner/hero-two-bg.png"), linear-gradient(#f3f4f5 100%, #f3f4f5 100%);
+  background: url("../../../public/images/banner/hero-two-bg.png"), -webkit-gradient(linear, left top, left bottom, color-stop(100%, #f3f4f5), to(#f3f4f5));
+  background: url("../../../public/images/banner/hero-two-bg.png"), linear-gradient(#f3f4f5 100%, #f3f4f5 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5429,8 +5430,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   8. Newslatter area start
 ==============================*/
 .newslatter-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(45, 55, 60, 0.8)), to(rgba(45, 55, 60, 0.8))), url("../.././public/images/banner/newslatter-bg.png");
-  background: linear-gradient(rgba(45, 55, 60, 0.8) 100%, rgba(45, 55, 60, 0.8) 100%), url("../.././public/images/banner/newslatter-bg.png");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(45, 55, 60, 0.8)), to(rgba(45, 55, 60, 0.8))), url("../../../public/images/banner/newslatter-bg.png");
+  background: linear-gradient(rgba(45, 55, 60, 0.8) 100%, rgba(45, 55, 60, 0.8) 100%), url("../../../public/images/banner/newslatter-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5569,8 +5570,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .newslatter-style-two .newslatter-offer-side {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(45, 55, 60, 0.8)), to(rgba(45, 55, 60, 0.8))), url("../.././public/images/banner/newslatter-bg2.png");
-  background: linear-gradient(rgba(45, 55, 60, 0.8) 100%, rgba(45, 55, 60, 0.8) 100%), url("../.././public/images/banner/newslatter-bg2.png");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(45, 55, 60, 0.8)), to(rgba(45, 55, 60, 0.8))), url("../../../public/images/banner/newslatter-bg2.png");
+  background: linear-gradient(rgba(45, 55, 60, 0.8) 100%, rgba(45, 55, 60, 0.8) 100%), url("../../../public/images/banner/newslatter-bg2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5617,8 +5618,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .newslatter-style-two .newslatter-form-side {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(222, 185, 155, 0.3)), to(rgba(222, 185, 155, 0.3))), url("../.././public/images/banner/newslatter-bg3.png");
-  background: linear-gradient(rgba(222, 185, 155, 0.3) 100%, rgba(222, 185, 155, 0.3) 100%), url("../.././public/images/banner/newslatter-bg3.png");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(222, 185, 155, 0.3)), to(rgba(222, 185, 155, 0.3))), url("../../../public/images/banner/newslatter-bg3.png");
+  background: linear-gradient(rgba(222, 185, 155, 0.3) 100%, rgba(222, 185, 155, 0.3) 100%), url("../../../public/images/banner/newslatter-bg3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5878,8 +5879,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../public/images/shapes/testi-shape-group.png");
-  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../public/images/shapes/testi-shape-group.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../../public/images/shapes/testi-shape-group.png");
+  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../../public/images/shapes/testi-shape-group.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-left: 10%;
@@ -6160,7 +6161,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .testimonial-style-two {
-  background: url("../../public/images/banner/testi-bg.png") no-repeat center;
+  background: url("../../../public/images/banner/testi-bg.png") no-repeat center;
   background-size: cover;
   padding: 70px 0 70px 0;
 }
@@ -8247,8 +8248,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .upcoming-tour-area {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../public/images/package/upcoming-bg.png");
-  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../public/images/package/upcoming-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../../public/images/package/upcoming-bg.png");
+  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../../public/images/package/upcoming-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9876,8 +9877,8 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .testimonial-style-three {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../public/images/reviewer/review3-bg.png");
-  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../public/images/reviewer/review3-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../../public/images/reviewer/review3-bg.png");
+  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../../public/images/reviewer/review3-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10372,7 +10373,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .more-update-section {
-  background: linear-gradient(91.22deg, rgba(0, 5, 15, 0.8) 24.54%, rgba(0, 5, 15, 0.2) 100%), url("../../public/images/banner/update-bg.png");
+  background: linear-gradient(91.22deg, rgba(0, 5, 15, 0.8) 24.54%, rgba(0, 5, 15, 0.2) 100%), url("../../../public/images/banner/update-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 30px;

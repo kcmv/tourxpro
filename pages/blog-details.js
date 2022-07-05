@@ -3,7 +3,7 @@ import React from "react";
 import BlogDetailsPage from "../components/pages/blog/blogdetails/BlogDetailsPage";
 const index = () => {
   const data = {
-    title: "Blog Details | TourXPro - Travels Tourism Agency",
+    title: "Blog Details",
     keywords: "Blog, Explore Top Destination",
     description:
       "Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis. feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet, sus",

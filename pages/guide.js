@@ -4,7 +4,7 @@ import GuidePage from "../components/pages/guide/GuidePage";
 
 const index = () => {
   const data = {
-    title: "Guide | TourXPro - Travels Tourism Agency",
+    title: "Guide",
     keywords: "Travel, Explore Top Destination",
     description:
       "Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis. feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet, sus",

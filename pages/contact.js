@@ -3,7 +3,7 @@ import React from "react";
 import Contact from "../components/pages/contact/Contact";
 const index = () => {
   const data = {
-    title: "Contact Us | TourXPro - Travels Tourism Agency",
+    title: "Contact Us",
     keywords: "Travel, Explore Top Destination",
     description:
       "Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis. feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet, sus",
