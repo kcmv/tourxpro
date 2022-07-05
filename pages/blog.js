@@ -1,8 +1,11 @@
+import LayoutWrapper from '@/layout/LayoutWrapper';
 import React from 'react'
 import BlogGridPage from "../components/pages/blog/BlogGrid/BlogGridPage";
 const index = () => {
   return (
-    <BlogGridPage/>
+    <LayoutWrapper>
+      <BlogGridPage/>
+    </LayoutWrapper>
   )
 }
 

@@ -1,8 +1,11 @@
+import LayoutWrapper from '@/layout/LayoutWrapper';
 import React from 'react'
 import BlogDetailsPage from "../components/pages/blog/blogdetails/BlogDetailsPage";
 const index = () => {
   return (
-    <BlogDetailsPage/>
+   <LayoutWrapper>
+     <BlogDetailsPage/>
+   </LayoutWrapper>
   )
 }
 

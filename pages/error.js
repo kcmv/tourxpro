@@ -1,9 +1,12 @@
+import LayoutWrapper from '@/layout/LayoutWrapper';
 import React from 'react'
 import Error from "../components/pages/error/Error";
 
 const index = () => {
   return (
-    <Error/>
+    <LayoutWrapper>
+      <Error/>
+    </LayoutWrapper>
   )
 }
 

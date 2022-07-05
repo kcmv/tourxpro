@@ -1,10 +1,12 @@
 import React, { useState, useReducer, useEffect } from "react";
 import Link from "next/link";
+import Head from "next/head";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 
-function Header() {
+function Header({data}) {
+  const { title, keywords, description, image } = data
   const [isSearchActive, setSearchActive] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
@@ -109,6 +111,46 @@ function Header() {
   ];
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+          key="canonical"
+        />
+        <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+        <meta
+          name="keywords"
+          content={keywords}
+          key="keywords"
+        />
+        <meta
+          name="description"
+          content={description}
+          key="desc"
+        />
+        <meta
+          property="og:title"
+          content="TourXPro - Travels Tourism Agency"
+        />
+        <meta
+          property="og:image"
+          content={image}
+        />
+        <meta
+          property="og:description"
+          content={description}
+        />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_BASE_URL}`} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="TourXPro - Travels Tourism Agency"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="ROBOTS" content="FOLLOW,INDEX" />
+      </Head>
       <div
         className={`${"main-searchbar-wrapper"} ${
           isSearchActive === 1 ? "search-active" : ""
@@ -199,7 +241,7 @@ function Header() {
                 </div>
                 <div className="col-lg-2">
                   <div className="main-form-submit">
-                    <Link href="/package" >
+                    <Link href="/package">
                       <a onClick={scrollTop}>
                         <button type="submit">Find Now</button>
                       </a>
@@ -276,10 +318,7 @@ function Header() {
               </Link>
             </div>
             <div className="col">
-              <Link
-                className="category-box"
-                href="/package"
-              >
+              <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
                     <img src="/images/icons/cate6.svg" alt="catagoryIMG" />
@@ -626,9 +665,7 @@ function Header() {
                     </div>
                     <div className="contact-box-inner">
                       <i className="bi bi-envelope-fill" />
-                      <a href="mailto:info@example.com">
-                        info@example.com
-                      </a>
+                      <a href="mailto:info@example.com">info@example.com</a>
                     </div>
                   </div>
                 </nav>
@@ -654,4 +691,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default React.memo(Header);

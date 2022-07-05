@@ -5879,7 +5879,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   inset: 0;
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.6)), to(rgba(0, 5, 15, 0.6))), url("../../public/images/shapes/testi-shape-group.png");
-  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("/../../public/images/shapes/testi-shape-group.png");
+  background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../../public/images/shapes/testi-shape-group.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-left: 10%;

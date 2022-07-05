@@ -3,7 +3,7 @@ import Footer from "../common/Footer";
 import Header from "../common/Header";
 import HomePage from "../pages/Home/HomePage";
 import Loading from "../common/Loading";
-function MainLayout() {
+function MainLayout({data}) {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     setLoad(true);
@@ -17,7 +17,7 @@ function MainLayout() {
         <Loading />
       ) : (
         <>
-          <Header />
+          <Header data={data} />
           <HomePage />
           <Footer className="footer-area mt-110" />
         </>

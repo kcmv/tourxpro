@@ -1,8 +1,11 @@
+import LayoutWrapper from '@/layout/LayoutWrapper';
 import React from 'react'
 import DestinationDetails from "../components/pages/destinationDetails/DestinationDetails";
 const index = () => {
   return (
-    <DestinationDetails/>
+    <LayoutWrapper>
+      <DestinationDetails/>
+    </LayoutWrapper>
   )
 }
 
