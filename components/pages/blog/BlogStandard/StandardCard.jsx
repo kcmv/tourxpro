@@ -13,7 +13,7 @@ function StandardCard(props) {
         <div className="blog-thumb">
           <Link href="/blog-details">
             <a onClick={scrollTop}>
-              <Image src={props.image} layout="responsive" height={16} width={30} alt="BlogStandardIMG" />
+              <img src={props.image} alt="BlogStandardIMG" />
             </a>
           </Link>
           <div className="blog-lavel">

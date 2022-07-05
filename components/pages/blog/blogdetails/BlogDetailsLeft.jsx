@@ -25,13 +25,7 @@ function BlogDetailsLeft() {
           </div>
 
           <div className="post-thumb">
-            <Image
-              src="/images/blog/blog-thumb-xl1.png"
-              height={50}
-              width={100}
-              layout="responsive"
-              alt="blogDetailsIMG"
-            />
+            <img src="/images/blog/blog-thumb-xl1.png" alt="blogDetailsIMG" />
           </div>
           <div className="post-header"></div>
           <div className="post-body">
@@ -55,12 +49,7 @@ function BlogDetailsLeft() {
             </p>
             <div className="blog-quote-box-one d-flex flex-column flex-sm-row">
               <div className="quote-icon">
-                <Image
-                  src="/images/icons/blogquote.svg"
-                  height={250}
-                  width={200}
-                  alt="blogDetailsIMG"
-                />
+                <img src="/images/icons/blogquote.svg" alt="blogDetailsIMG" />
               </div>
               <blockquote>
                 <p>
@@ -82,11 +71,8 @@ function BlogDetailsLeft() {
               Suspendissendt blandit interdum.
             </p>
             <div className="post-innner-image">
-              <Image
+              <img
                 src="/images/blog/blog-d-inner.png"
-                height={70}
-                width={200}
-                layout="responsive"
                 alt="blogDetailsIMG"
               />
             </div>
@@ -103,11 +89,8 @@ function BlogDetailsLeft() {
             </p>
             <div className="blog-quote-box-two text-center">
               <div className="quote-icon">
-                <Image
+                <img
                   src="/images/icons/blogquote.svg"
-                  height={15}
-                  width={200}
-                  layout="responsive"
                   alt="blogDetailsIMG"
                 />
               </div>
@@ -150,12 +133,7 @@ function BlogDetailsLeft() {
           <ul className="comment-list">
             <li className="single-comment d-flex flex-sm-row flex-column ">
               <div className="commmentor">
-                <Image
-                  src="/images/reviewer/commertor2.png"
-                  height={170}
-                  width={215}
-                  alt="BlogDetails"
-                />
+                <img src="/images/reviewer/commertor2.png" alt="BlogDetails" />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
@@ -194,12 +172,7 @@ function BlogDetailsLeft() {
             </li>
             <li className="single-comment d-flex flex-sm-row flex-column">
               <div className="commmentor">
-                <Image
-                  src="/images/reviewer/commertor3.png"
-                  height={170}
-                  width={215}
-                  alt="BlogDetails"
-                />
+                <img src="/images/reviewer/commertor3.png" alt="BlogDetails" />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">
@@ -238,12 +211,7 @@ function BlogDetailsLeft() {
             </li>
             <li className="single-comment d-flex flex-sm-row flex-column">
               <div className="commmentor">
-                <Image
-                  src="/images/reviewer/commertor1.png"
-                  height={170}
-                  width={215}
-                  alt="BlogDetails"
-                />
+                <img src="/images/reviewer/commertor1.png" alt="BlogDetails" />
               </div>
               <div className="comment mt-4 mt-sm-0">
                 <div className="d-flex align-items-center justify-content-between">

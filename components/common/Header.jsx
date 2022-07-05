@@ -248,12 +248,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate1.svg"
-                      width={100}
-                      height={30}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate1.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Adventure</h5>
                 </a>
@@ -263,12 +258,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate2.svg"
-                      width={100}
-                      height={28}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate2.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Group Tour</h5>
                 </a>
@@ -278,12 +268,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate3.svg"
-                      width={100}
-                      height={30}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate3.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Couple Tour</h5>
                 </a>
@@ -293,12 +278,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate4.svg"
-                      width={100}
-                      height={30}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate4.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -308,12 +288,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate5.svg"
-                      width={100}
-                      height={30}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate5.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Honeymoon</h5>
                 </a>
@@ -323,12 +298,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate6.svg"
-                      width={100}
-                      height={30}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate6.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Sea Beach</h5>
                 </a>
@@ -338,12 +308,7 @@ function Header({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
-                      src="/images/icons/cate7.svg"
-                      width={100}
-                      height={25}
-                      alt="catagoryIMG"
-                    />
+                    <img src="/images/icons/cate7.svg" alt="catagoryIMG" />
                   </div>
                   <h5>Mountain Tour</h5>
                 </a>
@@ -438,10 +403,10 @@ function Header({ data }) {
                 <div className="logo d-flex justify-content-between align-items-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <Image
+                      <img
                         src="/images/logo.png"
-                        width={200}
-                        height={28}
+                        //
+                        //
                         alt="logo"
                       />
                     </a>
@@ -495,12 +460,7 @@ function Header({ data }) {
                 >
                   <div className="logo d-xl-none text-center">
                     <a href="#">
-                      <Image
-                        src="/images/logo.png"
-                        width={200}
-                        height={28}
-                        alt="logo"
-                      />
+                      <img src="/images/logo.png" alt="logo" />
                     </a>
                   </div>
                   <ul>

@@ -26,13 +26,7 @@ function PackageArea() {
                 <div className="package-thumb">
                   <Link href="package-details">
                     <a onClick={scrollTop}>
-                      <Image
-                        src="/images/package/best-s1.png"
-                        height={20}
-                        width={30}
-                        layout="responsive"
-                        alt=""
-                      />
+                      <img src="/images/package/best-s1.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -74,13 +68,7 @@ function PackageArea() {
                     href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-details`}
                   >
                     <a onClick={scrollTop}>
-                      <Image
-                        src="/images/package/best-s2.png"
-                        height={20}
-                        width={30}
-                        layout="responsive"
-                        alt=""
-                      />
+                      <img src="/images/package/best-s2.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -129,13 +117,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      <Image
-                        src="/images/package/best-s3.png"
-                        height={20}
-                        width={30}
-                        layout="responsive"
-                        alt=""
-                      />
+                      <img src="/images/package/best-s3.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -184,13 +166,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      <Image
-                        src="/images/package/best-s4.png"
-                        height={20}
-                        width={30}
-                        layout="responsive"
-                        alt=""
-                      />
+                      <img src="/images/package/best-s4.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -240,13 +216,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      <Image
-                        src="/images/package/best-s5.png"
-                        height={20}
-                        width={30}
-                        layout="responsive"
-                        alt=""
-                      />
+                      <img src="/images/package/best-s5.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -296,13 +266,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      <Image
-                        src="/images/package/best-s6.png"
-                        height={20}
-                        width={30}
-                        layout="responsive"
-                        alt=""
-                      />
+                      <img src="/images/package/best-s6.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">

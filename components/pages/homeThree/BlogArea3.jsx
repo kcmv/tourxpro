@@ -34,11 +34,11 @@ function BlogArea3() {
                 <div className="blog-thumb">
                   <Link href="/blog-details" onClick={scrollTop}>
                     <a>
-                      <Image
+                      <img
                         src="/images/blog/home3-blog1.png"
                         height={23}
-                        width={30}
-                        layout="responsive"
+                        
+                        
                         alt=""
                       />
                     </a>
@@ -72,11 +72,11 @@ function BlogArea3() {
                 <div className="blog-thumb">
                   <Link href="/blog-details" onClick={scrollTop}>
                     <a>
-                      <Image
+                      <img
                         src="/images/blog/home3-blog2.png"
                         height={23}
-                        width={30}
-                        layout="responsive"
+                        
+                        
                         alt=""
                       />
                     </a>
@@ -110,11 +110,11 @@ function BlogArea3() {
                 <div className="blog-thumb">
                   <Link href="/blog-details" onClick={scrollTop}>
                     <a>
-                      <Image
+                      <img
                         src="/images/blog/home3-blog3.png"
                         height={23}
-                        width={30}
-                        layout="responsive"
+                        
+                        
                         alt=""
                       />
                     </a>

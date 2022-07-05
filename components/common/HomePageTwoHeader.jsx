@@ -94,10 +94,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate1.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -109,10 +109,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate2.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -124,10 +124,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate3.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -139,10 +139,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate4.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -154,10 +154,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate5.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -169,10 +169,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate6.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -184,10 +184,10 @@ function HomePageTwoHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate7.svg"
-                      width={100}
-                      height={30}
+                      
+                      
                       alt="images"
                     />
                   </div>
@@ -215,10 +215,10 @@ function HomePageTwoHeader({ data }) {
                   <div className="inner-logo d-xl-none text-center">
                     <Link href="/">
                       <a onClick={scrollTop}>
-                        <Image
+                        <img
                           src="/images/logo.png"
-                          height={30}
-                          width={170}
+                          
+                          
                           alt=""
                         />
                       </a>
@@ -378,10 +378,10 @@ function HomePageTwoHeader({ data }) {
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <Image
+                      <img
                         src="/images/logo-w.png"
-                        height={25}
-                        width={170}
+                        
+                        
                         alt="logo"
                       />
                     </a>

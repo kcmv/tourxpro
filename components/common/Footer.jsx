@@ -16,13 +16,7 @@ function Footer(props) {
       <div className={props.className}>
         <div className="footer-main-wrapper">
           <div className="footer-vactor">
-            <Image
-              src="/images/banner/footer-bg.png"
-              layout="responsive"
-              width={100}
-              height={100}
-              alt="FooterIMG"
-            />
+            <img src="/images/banner/footer-bg.png" alt="FooterIMG" />
           </div>
           <div className="container">
             <div className="row justify-content-center g-4">
@@ -283,12 +277,7 @@ function Footer(props) {
                 <div className="footer-logo text-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <Image
-                        src="/images/logo-w.png"
-                        width={150}
-                        height={18}
-                        alt="footerIMG"
-                      />
+                      <img src="/images/logo-w.png" alt="footerIMG" />
                     </a>
                   </Link>
                 </div>

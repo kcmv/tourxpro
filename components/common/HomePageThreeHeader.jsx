@@ -143,10 +143,10 @@ function HomePageThreeHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate1.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                   </div>
@@ -158,10 +158,10 @@ function HomePageThreeHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate2.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                   </div>
@@ -174,10 +174,10 @@ function HomePageThreeHeader({ data }) {
                 <a onClick={scrollTop}>
                   <a>
                     <div className="cate-icon mx-auto">
-                      <Image
+                      <img
                       src="/images/icons/cate3.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                     </div>
@@ -190,10 +190,10 @@ function HomePageThreeHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate4.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                   </div>
@@ -205,10 +205,10 @@ function HomePageThreeHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate5.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                   </div>
@@ -220,10 +220,10 @@ function HomePageThreeHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate6.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                   </div>
@@ -235,10 +235,10 @@ function HomePageThreeHeader({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <Image
+                    <img
                       src="/images/icons/cate7.svg"
-                      height={35}
-                      width={50}
+                      
+                      
                       alt=""
                     />
                   </div>
@@ -256,10 +256,10 @@ function HomePageThreeHeader({ data }) {
               <div className="col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <a href="/">
-                    <Image
+                    <img
                       src="/images/logo-w.png"
-                      height={25}
-                      width={170}
+                      
+                      
                       alt="logo"
                     />
                   </a>
@@ -324,10 +324,10 @@ function HomePageThreeHeader({ data }) {
                 >
                   <div className="inner-logo d-xl-none text-center">
                     <a href="#">
-                      <Image
+                      <img
                       src="/images/logo.png"
-                      height={30}
-                      width={170}
+                      
+                      
                       alt=""
                     />
                     </a>
@@ -527,7 +527,7 @@ function HomePageThreeHeader({ data }) {
                 <div className="nav-right d-xl-flex d-none">
                   <div className="nav-right-hotline d-xxl-flex d-none">
                     <div className="hotline-icon">
-                      <Image src="/images/icons/header-phone.svg" height={5} width={5} alt="" />
+                      <img src="/images/icons/header-phone.svg" alt="" />
                     </div>
                     <div className="hotline-info">
                       <span>Hot Line Number</span>

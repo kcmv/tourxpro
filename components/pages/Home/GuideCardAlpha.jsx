@@ -6,7 +6,7 @@ function GuideCardAlpha(props) {
     <>
       <div className="guide-card-alpha">
         <div className="guide-image">
-          <Image src={props.image} layout="responsive" height={7.7} width={10} alt="images"/>
+          <img src={props.image} alt="images"/>
           <ul className="guide-social-links">
             <li>
               <a

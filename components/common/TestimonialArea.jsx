@@ -78,14 +78,14 @@ function TestimonialArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="testimonial-card testimonial-card-alpha">
                   <div className="testimonial-overlay-img">
-                    <Image src="/images/reviewer/reviewer.png" height={100} width={100} alt="images" />
+                    <img src="/images/reviewer/reviewer.png"   alt="images" />
                   </div>
                   <div className="testimonial-card-top">
                     <div className="qoute-icon">
                       <i className="bx bxs-quote-left" />
                     </div>
                     <div className="testimonial-thumb">
-                      <Image src="/images/reviewer/r-sm1.png" height={100} width={100} alt="images" />
+                      <img src="/images/reviewer/r-sm1.png"   alt="images" />
                     </div>
                     <h3 className="testimonial-count">01</h3>
                   </div>
@@ -124,14 +124,14 @@ function TestimonialArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="testimonial-card testimonial-card-alpha">
                   <div className="testimonial-overlay-img">
-                    <Image src="/images/reviewer/reviewer.png" height={100} width={100} alt="images" />
+                    <img src="/images/reviewer/reviewer.png"   alt="images" />
                   </div>
                   <div className="testimonial-card-top">
                     <div className="qoute-icon">
                       <i className="bx bxs-quote-left" />
                     </div>
                     <div className="testimonial-thumb">
-                      <Image src="/images/reviewer/r-sm2.png" height={100} width={100} alt="images" />
+                      <img src="/images/reviewer/r-sm2.png"   alt="images" />
                     </div>
                     <h3 className="testimonial-count">02</h3>
                   </div>
@@ -170,14 +170,14 @@ function TestimonialArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="testimonial-card testimonial-card-alpha">
                   <div className="testimonial-overlay-img">
-                    <Image src="/images/reviewer/reviewer.png" height={100} width={100} alt="images" />
+                    <img src="/images/reviewer/reviewer.png"   alt="images" />
                   </div>
                   <div className="testimonial-card-top">
                     <div className="qoute-icon">
                       <i className="bx bxs-quote-left" />
                     </div>
                     <div className="testimonial-thumb">
-                      <Image src="/images/reviewer/r-sm3.png" height={100} width={100} alt="images" />
+                      <img src="/images/reviewer/r-sm3.png"   alt="images" />
                     </div>
                     <h3 className="testimonial-count">03</h3>
                   </div>

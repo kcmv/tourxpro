@@ -10,7 +10,7 @@ function HomeOneDestinationCart(props) {
         <div className="d-card-thumb">
           <Link href="/destination-details">
             <a onClick={scrollTop}>
-              <Image src={props.image} height={8} width={10} layout="responsive" alt ="images"/>
+              <img src={props.image} alt ="images"/>
             </a>
           </Link>
         </div>

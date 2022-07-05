@@ -6,7 +6,7 @@ function GuideCardGama(props) {
     <>
       <div className="guide-card-gamma">
         <div className="guide-image">
-          <Image src={props.image} width="400" height="350" layout="responsive"  alt="GuideIMG" />
+          <img src={props.image} width="400" height="350"   alt="GuideIMG" />
           <ul className="guide-social-links">
             <li>
               <a

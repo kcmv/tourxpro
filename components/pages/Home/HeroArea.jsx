@@ -51,7 +51,7 @@ function HeroArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="hero-single-slide">
                   <div className="hero-highlighted-bg">
-                    <Image src="/images/banner/bg-highlight1.png" height={33} width={30} layout="responsive" alt="images" />
+                    <img src="/images/banner/bg-highlight1.png" alt="images" />
                   </div>
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">
@@ -90,7 +90,7 @@ function HeroArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="hero-single-slide">
                   <div className="hero-highlighted-bg">
-                    <Image src="/images/banner/bg-highlight2.png" height={33} width={30} layout="responsive" alt="images" />
+                    <img src="/images/banner/bg-highlight2.png" alt="images" />
                   </div>
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">
@@ -129,7 +129,7 @@ function HeroArea() {
               <SwiperSlide className="swiper-slide">
                 <div className="hero-single-slide">
                   <div className="hero-highlighted-bg">
-                    <Image src="/images/banner/bg-highlight3.png" height={33} width={30} layout="responsive" alt="images" />
+                    <img src="/images/banner/bg-highlight3.png" alt="images" />
                   </div>
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">

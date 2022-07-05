@@ -102,11 +102,8 @@ function PackageCardBeta(props) {
         <div className="package-thumb">
           <Link href="/package-details" onClick={scrollTop}>
             <a>
-              <Image
+              <img
                 src={props.image}
-                layout="responsive"
-                height={8}
-                width={10}
                 alt=""
               />
             </a>

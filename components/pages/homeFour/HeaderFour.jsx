@@ -143,7 +143,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                   <Image src="/images/icons/cate1.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate1.svg" alt="" />
                   </div>
                   <h5>Adventure</h5>
                 </a>
@@ -153,7 +153,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                  <Image src="/images/icons/cate2.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate2.svg" alt="" />
                   </div>
                   <h5>Group Tour</h5>
                 </a>
@@ -163,7 +163,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                  <Image src="/images/icons/cate3.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate3.svg" alt="" />
                   </div>
                   <h5>Couple Tour</h5>
                 </a>
@@ -173,7 +173,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                  <Image src="/images/icons/cate4.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate4.svg" alt="" />
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -183,7 +183,7 @@ function HeaderFour({ data }) {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                  <Image src="/images/icons/cate5.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate5.svg" alt="" />
                   </div>
                   <h5>Honeymoon</h5>
                 </a>
@@ -197,7 +197,7 @@ function HeaderFour({ data }) {
               >
                 <a>
                   <div className="cate-icon mx-auto">
-                    <Image src="/images/icons/cate6.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate6.svg" alt="" />
                   </div>
                   <h5>Sea Beach</h5>
                 </a>
@@ -211,7 +211,7 @@ function HeaderFour({ data }) {
               >
                 <a>
                   <div className="cate-icon mx-auto">
-                  <Image src="/images/icons/cate7.svg" height={140} width={50} alt=""/>
+                    <img src="/images/icons/cate7.svg" alt="" />
                   </div>
                   <h5>Mountain Tour</h5>
                 </a>
@@ -272,12 +272,7 @@ function HeaderFour({ data }) {
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <Link href={"#"} onClick={scrollTop}>
                     <a>
-                    <Image
-                        src="/images/logo-w.png"
-                        height={25}
-                        width={170}
-                        alt="logo"
-                      />
+                      <img src="/images/logo-w.png" alt="logo" />
                     </a>
                   </Link>
                   <div className="mobile-menu d-flex ">
@@ -341,12 +336,7 @@ function HeaderFour({ data }) {
                 >
                   <div className="inner-logo d-xl-none text-center">
                     <a href="#">
-                    <Image
-                          src="/images/logo.png"
-                          height={30}
-                          width={170}
-                          alt=""
-                        />
+                      <img src="/images/logo.png" alt="" />
                     </a>
                   </div>
                   <ul>
@@ -618,7 +608,7 @@ function HeaderFour({ data }) {
                   </div>
                   <div className="nav-right-hotline d-xxl-flex d-none">
                     <div className="hotline-icon">
-                    <Image src="/images/icons/header-phone.svg" height={5} width={5} alt="" />
+                      <img src="/images/icons/header-phone.svg" alt="" />
                     </div>
                     <div className="hotline-info">
                       <span>Hot Line Number</span>

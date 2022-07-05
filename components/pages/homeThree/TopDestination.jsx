@@ -74,7 +74,6 @@ function DestinationItem(props) {
       <div className="destination-item">
         <div className="destination-img">
           <img src={`${props.image}`} alt="designation img" />
-          {/* <Image src={props.image} height={300} width={300} alt="designation img" /> */}
         </div>
         <div className="destination-overlay">
           <div className="content">

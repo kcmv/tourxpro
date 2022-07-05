@@ -10,7 +10,7 @@ function DestinationCart(props) {
     <>
       <div className="destination-card-style-two mb-0">
         <div className="d-card-thumb">
-          <Image src={props.image} height={9} width={10} layout="responsive" alt="CartIMG" />
+          <img src={props.image}  alt="CartIMG" />
         </div>
         <div className="d-card-content">
           <h4 className="destination-title">

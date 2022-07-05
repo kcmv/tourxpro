@@ -12,9 +12,9 @@ function BlogCardGama(props) {
       <div className="blog-card-gamma">
         <div className="blog-thumb">
           <Link href="/blog-details">
-           <a> 
-            <Image src={props.thumbImage} height={20} width={30} layout="responsive" alt="BlogIMG" />
-           </a>
+            <a>
+              <img src={props.thumbImage} alt="BlogIMG" />
+            </a>
           </Link>
           <div className="blog-lavel">
             <a href="#">Tourist</a>
@@ -31,10 +31,7 @@ function BlogCardGama(props) {
             </a>
           </div>
           <h4 className="blog-title">
-            <Link
-              onClick={scrollTop}
-              href="/blog-details"
-            >
+            <Link onClick={scrollTop} href="/blog-details">
               {props.title}
             </Link>
           </h4>

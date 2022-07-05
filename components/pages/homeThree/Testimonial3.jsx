@@ -125,7 +125,7 @@ function TestimonialCardBeta(props) {
           <div className="testimonial-info">
             <div className="reviewr-info">
               <div className="single-thumb">
-                <Image src={props.image} height={50} width={50} alt="" />
+                <img src={props.image}   alt="" />
               </div>
               <div className="reviwer-info-cotn">
                 <h5 className="reviewer-name">{props.name}</h5>
