@@ -23,12 +23,11 @@ function PackageArea() {
             </div>
             <div className="col-lg-4 col-sm-10">
               <div className="package-btn text-lg-end">
-                <a
-                  href="package.html"
-                  className="button-fill-primary all-package-btn"
-                >
-                  View All Tour
-                </a>
+                <Link href="/package">
+                  <a className="button-fill-primary all-package-btn">
+                    View All Tour
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -86,9 +85,9 @@ function PackageArea() {
             </div>
           </div>
           <div className="package-page-btn text-center mt-60">
-            <a href="package.html" className="button-fill-round">
-              View All
-            </a>
+            <Link href="/package">
+              <a className="button-fill-round">View All</a>
+            </Link>
           </div>
         </div>
       </div>

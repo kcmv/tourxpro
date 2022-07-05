@@ -130,12 +130,11 @@ function UpcomingTour() {
           </div>
           <div className="row text-center d-flex justify-content-center">
             <div className="col-md-4">
-              <a
-                href="destination.html"
-                className="button-outlined-primary upcoming-btn mt-50"
-              >
-                View All Offer
-              </a>
+              <Link href="/destination">
+                <a className="button-outlined-primary upcoming-btn mt-50">
+                  View All Offer
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -148,9 +147,11 @@ function PackageCardBeta(props) {
     <>
       <div className="package-card-beta">
         <div className="package-thumb">
-          <a href="package-details.html">
-            <img src={` ${props.image}`} alt="package images" />
-          </a>
+          <Link href="/package-details">
+            <a>
+              <img src={` ${props.image}`} alt="package images" />
+            </a>
+          </Link>
           <p className="card-lavel">
             <i className="bi bi-clock" /> <span>{props.time}</span>
           </p>
