@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 
 import PackageCard from "../packageGrid/PackageCard";
@@ -74,8 +73,8 @@ function OfferArea() {
           </div>
           <div className="row text-center">
             <div className="package-bottom-btn">
-              <Link href="/package" className="button-fill-primary">
-                <a onClick={scrollTop}>View All Offer</a>
+              <Link href="/package" >
+                <a onClick={scrollTop} className="button-fill-primary">View All Offer</a>
               </Link>
             </div>
           </div>

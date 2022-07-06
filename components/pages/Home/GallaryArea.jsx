@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 function GallaryArea() {
@@ -72,6 +73,7 @@ function GallaryArea() {
                 <div className="col-lg-4 col-md-4">
                   <div className="gallary-item">
                     <img src="/images/gallary/g-xl2.png" alt="ImageGallery" />
+
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen01.png"
@@ -81,6 +83,7 @@ function GallaryArea() {
                   </div>
                   <div className="gallary-item">
                     <img src="/images/gallary/g-md3.png" alt="ImageGallery" />
+
                     <a
                       className="gallary-item-overlay"
                       href="/images/gallary/tourfullscreen03.png"

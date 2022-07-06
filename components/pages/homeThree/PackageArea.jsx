@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 const scrollTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -23,12 +23,11 @@ function PackageArea() {
             </div>
             <div className="col-lg-4 col-sm-10">
               <div className="package-btn text-lg-end">
-                <a
-                  href="package.html"
-                  className="button-fill-primary all-package-btn"
-                >
-                  View All Tour
-                </a>
+                <Link href="/package">
+                  <a className="button-fill-primary all-package-btn">
+                    View All Tour
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -86,9 +85,9 @@ function PackageArea() {
             </div>
           </div>
           <div className="package-page-btn text-center mt-60">
-            <a href="package.html" className="button-fill-round">
-              View All
-            </a>
+            <Link href="/package">
+              <a className="button-fill-round">View All</a>
+            </Link>
           </div>
         </div>
       </div>
@@ -103,7 +102,10 @@ function PackageCardBeta(props) {
         <div className="package-thumb">
           <Link href="/package-details" onClick={scrollTop}>
             <a>
-              <img src={` ${props.image}`} alt="package-details img" />
+              <img
+                src={props.image}
+                alt=""
+              />
             </a>
           </Link>
           <p className="card-lavel">
@@ -120,7 +122,6 @@ function PackageCardBeta(props) {
             <div className="book-btn">
               <Link href="/package-details" onClick={scrollTop}>
                 <a>
-                  {" "}
                   Book Now <i className="bx bxs-right-arrow-alt" />
                 </a>
               </Link>

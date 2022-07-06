@@ -1,6 +1,6 @@
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 import { SRLWrapper } from "simple-react-lightbox";
+import Image from "next/image";
 
 function Footer(props) {
   // smooth scrol
@@ -195,7 +195,7 @@ function Footer(props) {
                         </div>
                         <div className="footer-gallary-item">
                           <a
-                            href={"/images/gallary/fullsecrron05.png"}
+                            href="/images/gallary/fullsecrron05.png"
                             data-fancybox="footer"
                             data-caption="Caption Here"
                           >
@@ -239,17 +239,17 @@ function Footer(props) {
               <h5>Contact Us:</h5>
               <ul className="footer-contact-list">
                 <li>
-                  <i className="bi bi-telephone-x" />{" "}
+                  <i className="bi bi-telephone-x" />
                   <a rel="noopener noreferrer" href="tel:+1 763-227-5032">
                     +1 763-227-5032
                   </a>
                 </li>
                 <li>
-                  <i className="bi bi-envelope-open" />{" "}
+                  <i className="bi bi-envelope-open" />
                   <a href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li>
-                  <i className="bi bi-geo-alt" />{" "}
+                  <i className="bi bi-geo-alt" />
                   <a href="#">2752 Willison Street Eagan, United State</a>
                 </li>
               </ul>
@@ -262,7 +262,7 @@ function Footer(props) {
               <div className="col-lg-4 col-md-6 order-lg-1 order-3 ">
                 <div className="copyright-link text-lg-start text-center">
                   <p>
-                    Copyright 2022 TourXPro | Design By{" "}
+                    Copyright 2022 TourXPro | Design By
                     <a
                       rel="noopener noreferrer"
                       href="https://www.egenslab.com/"
@@ -277,7 +277,7 @@ function Footer(props) {
                 <div className="footer-logo text-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <img src="/images/logo-w.png" alt="FooterIMG" />
+                      <img src="/images/logo-w.png" alt="footerIMG" />
                     </a>
                   </Link>
                 </div>

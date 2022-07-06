@@ -1,7 +1,10 @@
 import React, { useEffect, useReducer, useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
 
-function HeaderFour() {
+function HeaderFour({ data }) {
+  const { title, keywords, description, image } = data;
   const [searchActive, setSearchActive] = useState(0);
   const [catagoryActive, setCatagoryActive] = useState(0);
   const [userDropdown, setuserDropdown] = useState(0);
@@ -75,6 +78,32 @@ function HeaderFour() {
   };
   return (
     <>
+      <Head>
+        <title>{`${title} | TourXPro - Travel Tourism Agency`}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+          key="canonical"
+        />
+        <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="keywords" content={keywords} key="keywords" />
+        <meta name="description" content={description} key="desc" />
+        <meta property="og:title" content="TourXPro - Travels Tourism Agency" />
+        <meta property="og:image" content={image} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="TourXPro - Travels Tourism Agency"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="ROBOTS" content="FOLLOW,INDEX" />
+      </Head>
       <div
         className={searchActive === 1 ? "mobile-search slide" : "mobile-search"}
       >
@@ -144,10 +173,7 @@ function HeaderFour() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img
-                      src={process.env.NEXT_PUBLIC_BASE_URL + "/images/icons/cate4.svg"}
-                      alt=""
-                    />
+                    <img src="/images/icons/cate4.svg" alt="" />
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -169,13 +195,12 @@ function HeaderFour() {
                 href={`${process.env.NEXT_PUBLIC_BASE_URL}/package`}
                 onClick={scrollTop}
               >
-                <a><div className="cate-icon mx-auto">
-                  <img
-                    src={process.env.NEXT_PUBLIC_BASE_URL + "/images/icons/cate6.svg"}
-                    alt=""
-                  />
-                </div>
-                <h5>Sea Beach</h5></a>
+                <a>
+                  <div className="cate-icon mx-auto">
+                    <img src="/images/icons/cate6.svg" alt="" />
+                  </div>
+                  <h5>Sea Beach</h5>
+                </a>
               </Link>
             </div>
             <div className="col">
@@ -184,13 +209,12 @@ function HeaderFour() {
                 href={`${process.env.NEXT_PUBLIC_BASE_URL}/package`}
                 onClick={scrollTop}
               >
-                <a><div className="cate-icon mx-auto">
-                  <img
-                    src={process.env.NEXT_PUBLIC_BASE_URL + "/images/icons/cate7.svg"}
-                    alt=""
-                  />
-                </div>
-                <h5>Mountain Tour</h5></a>
+                <a>
+                  <div className="cate-icon mx-auto">
+                    <img src="/images/icons/cate7.svg" alt="" />
+                  </div>
+                  <h5>Mountain Tour</h5>
+                </a>
               </Link>
             </div>
           </div>
@@ -203,11 +227,11 @@ function HeaderFour() {
               <div className="topbar-contact-left">
                 <ul className="contact-list">
                   <li>
-                    <i className="bi bi-telephone-fill" />{" "}
+                    <i className="bi bi-telephone-fill" />
                     <a href="tel:+17632275032">+1 763-227-5032</a>
                   </li>
                   <li>
-                    <i className="bi bi-envelope-fill" />{" "}
+                    <i className="bi bi-envelope-fill" />
                     <a href="mailto:info@example.com">info@example.com</a>
                   </li>
                 </ul>
@@ -247,10 +271,9 @@ function HeaderFour() {
               <div className="col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <Link href={"#"} onClick={scrollTop}>
-                    <a><img
-                      src={process.env.NEXT_PUBLIC_BASE_URL + "/images/logo-w.png"}
-                      alt="logo"
-                    /></a>
+                    <a>
+                      <img src="/images/logo-w.png" alt="logo" />
+                    </a>
                   </Link>
                   <div className="mobile-menu d-flex ">
                     <div className="d-flex align-items-center">
@@ -313,10 +336,7 @@ function HeaderFour() {
                 >
                   <div className="inner-logo d-xl-none text-center">
                     <a href="#">
-                      <img
-                        src={process.env.NEXT_PUBLIC_BASE_URL + "/images/logo.png"}
-                        alt=""
-                      />
+                      <img src="/images/logo.png" alt="" />
                     </a>
                   </div>
                   <ul>
@@ -324,7 +344,9 @@ function HeaderFour() {
                       className="has-child-menu"
                       onClick={() => dispatch({ type: "homeOne" })}
                     >
-                      <a href="#">Home</a>
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
                       <i className="fl flaticon-plus">+</i>
                       <ul
                         className={
@@ -338,7 +360,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
                           >
-                           <a> Home Style 1</a>
+                            <a> Home Style 1</a>
                           </Link>
                         </li>
                         <li>
@@ -354,7 +376,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/index3`}
                           >
-                           <a> Home Style 3</a>
+                            <a> Home Style 3</a>
                           </Link>
                         </li>
                         <li>
@@ -362,7 +384,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/index4`}
                           >
-                           <a> Home Style 4</a>
+                            <a> Home Style 4</a>
                           </Link>
                         </li>
                       </ul>
@@ -393,7 +415,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/destination`}
                           >
-                           <a> Destination</a>
+                            <a> Destination</a>
                           </Link>
                         </li>
                         <li>
@@ -424,7 +446,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/package`}
                           >
-                          <a>  Package Grid</a>
+                            <a> Package Grid</a>
                           </Link>
                         </li>
                         <li>
@@ -432,7 +454,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-sidebar`}
                           >
-                          <a>  Package Sidebar</a>
+                            <a> Package Sidebar</a>
                           </Link>
                         </li>
                         <li>
@@ -440,7 +462,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-standard`}
                           >
-                          <a>  Package Standard</a>
+                            <a> Package Standard</a>
                           </Link>
                         </li>
                         <li>
@@ -448,7 +470,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/package-details`}
                           >
-                           <a> Package Details{" "}</a>
+                            <a> Package Details </a>
                           </Link>
                         </li>
                       </ul>
@@ -471,7 +493,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog`}
                           >
-                          <a>  Blog Grid</a>
+                            <a> Blog Grid</a>
                           </Link>
                         </li>
                         <li>
@@ -479,7 +501,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog-sidebar`}
                           >
-                           <a> Blog Sidebar</a>
+                            <a> Blog Sidebar</a>
                           </Link>
                         </li>
                         <li>
@@ -487,7 +509,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog-standard`}
                           >
-                           <a> Blog Standard{" "}</a>
+                            <a> Blog Standard </a>
                           </Link>
                         </li>
                         <li>
@@ -495,7 +517,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog-details`}
                           >
-                          <a>  Blog Details</a>
+                            <a> Blog Details</a>
                           </Link>
                         </li>
                       </ul>
@@ -518,7 +540,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/guide`}
                           >
-                           <a> Guide</a>
+                            <a> Guide</a>
                           </Link>
                         </li>
                         <li>
@@ -526,7 +548,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/gallery`}
                           >
-                           <a> Gallary</a>
+                            <a> Gallary</a>
                           </Link>
                         </li>
                         <li>
@@ -534,7 +556,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/faq`}
                           >
-                          <a>  FAQ</a>
+                            <a> FAQ</a>
                           </Link>
                         </li>
                         <li>
@@ -542,7 +564,7 @@ function HeaderFour() {
                             onClick={scrollTop}
                             href={`${process.env.NEXT_PUBLIC_BASE_URL}/error`}
                           >
-                        <a>    404</a>
+                            <a> 404</a>
                           </Link>
                         </li>
                       </ul>
@@ -552,7 +574,7 @@ function HeaderFour() {
                         onClick={scrollTop}
                         href={`${process.env.NEXT_PUBLIC_BASE_URL}/contact`}
                       >
-                      <a>  Contact Us</a>
+                        <a> Contact Us</a>
                       </Link>
                     </li>
                   </ul>
@@ -586,13 +608,7 @@ function HeaderFour() {
                   </div>
                   <div className="nav-right-hotline d-xxl-flex d-none">
                     <div className="hotline-icon">
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/icons/header-phone.svg"
-                        }
-                        alt=""
-                      />
+                      <img src="/images/icons/header-phone.svg" alt="" />
                     </div>
                     <div className="hotline-info">
                       <span>Hot Line Number</span>

@@ -1,10 +1,13 @@
 import React, { useState, useReducer, useEffect } from "react";
 import Link from "next/link";
+import Head from "next/head";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
+import Image from "next/image";
 
-function Header() {
+function Header({ data }) {
+  const { title, keywords, description, image } = data;
   const [isSearchActive, setSearchActive] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
@@ -14,15 +17,6 @@ function Header() {
   /*useing reducer to manage the active or inactive menu*/
 
   useEffect(() => {
-    /* Method that will fix header after a specific scrollable */
-    const isSticky = (e) => {
-      const header = document.querySelector("header");
-      const scrollTop = window.scrollY;
-      scrollTop >= 200
-        ? header.classList.add("sticky")
-        : header.classList.remove("sticky");
-    };
-
     // Add scroll event when the component is loaded
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -30,13 +24,13 @@ function Header() {
     };
   });
   // /* Method that will fix header after a specific scrollable */
-  // const isSticky = (e) => {
-  //   const header = document.querySelector("header");
-  //   const scrollTop = window.scrollY;
-  //   scrollTop >= 200
-  //     ? header.classList.add("sticky")
-  //     : header.classList.remove("sticky");
-  // };
+  const isSticky = (e) => {
+    const header = document.querySelector("header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 200
+      ? header.classList.add("sticky")
+      : header.classList.remove("sticky");
+  };
 
   const initialState = { activeMenu: "" };
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -109,6 +103,33 @@ function Header() {
   ];
   return (
     <>
+      <Head>
+        <title>{`${title} | TourXPro - Travel Tourism Agency`}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+          key="canonical"
+        />
+        <link rel="icon" href="../../public/favicon.ico" />
+        <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="keywords" content={keywords} key="keywords" />
+        <meta name="description" content={description} key="desc" />
+        <meta property="og:title" content="TourXPro - Travels Tourism Agency" />
+        <meta property="og:image" content={image} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="TourXPro - Travels Tourism Agency"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="ROBOTS" content="FOLLOW,INDEX" />
+      </Head>
       <div
         className={`${"main-searchbar-wrapper"} ${
           isSearchActive === 1 ? "search-active" : ""
@@ -199,7 +220,7 @@ function Header() {
                 </div>
                 <div className="col-lg-2">
                   <div className="main-form-submit">
-                    <Link href="/package" >
+                    <Link href="/package">
                       <a onClick={scrollTop}>
                         <button type="submit">Find Now</button>
                       </a>
@@ -267,7 +288,6 @@ function Header() {
             <div className="col">
               <Link className="category-box" href="/package">
                 <a>
-                  {" "}
                   <div className="cate-icon mx-auto">
                     <img src="/images/icons/cate5.svg" alt="catagoryIMG" />
                   </div>
@@ -276,10 +296,7 @@ function Header() {
               </Link>
             </div>
             <div className="col">
-              <Link
-                className="category-box"
-                href="/package"
-              >
+              <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
                     <img src="/images/icons/cate6.svg" alt="catagoryIMG" />
@@ -387,7 +404,12 @@ function Header() {
                 <div className="logo d-flex justify-content-between align-items-center">
                   <Link href="/">
                     <a onClick={scrollTop}>
-                      <img src="/images/logo.png" alt="logo" />
+                      <img
+                        src="/images/logo.png"
+                        //
+                        //
+                        alt="logo"
+                      />
                     </a>
                   </Link>
                   <div className="d-flex align-items-center gap-4">
@@ -439,7 +461,7 @@ function Header() {
                 >
                   <div className="logo d-xl-none text-center">
                     <a href="#">
-                      <img src="/images/logo.png" alt="catagoryIMG" />
+                      <img src="/images/logo.png" alt="logo" />
                     </a>
                   </div>
                   <ul>
@@ -626,9 +648,7 @@ function Header() {
                     </div>
                     <div className="contact-box-inner">
                       <i className="bi bi-envelope-fill" />
-                      <a href="mailto:info@example.com">
-                        info@example.com
-                      </a>
+                      <a href="mailto:info@example.com">info@example.com</a>
                     </div>
                   </div>
                 </nav>
@@ -654,4 +674,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default React.memo(Header);

@@ -18,8 +18,8 @@ function BlogArea() {
           </div>
           <div className="col-lg-5">
             <div className="blog-btn text-lg-end">
-              <Link href="/blog" className="button-fill-round">
-                <a onClick={scrollTop}>View All</a>
+              <Link href="/blog">
+                <a onClick={scrollTop} className="button-fill-round">View All</a>
               </Link>
             </div>
           </div>

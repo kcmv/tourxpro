@@ -9,13 +9,12 @@ trigger:
 
 pr:
   - master
-  - development
 
 # setting variables
 variables:
-  azureSubscription: $(SubscriptionARM)
+  azureSubscription: "FrontEndARM"
 
-  RgName: $(RGNAME)
+  RgName: $(tourRGname)
 
   # names are based on created azure web app
   webAppName: "tourxpro"
@@ -52,7 +51,7 @@ stages:
             inputs:
               targetType: "inline"
               script: |
-                echo '##vso[task.setvariable variable=NEXT_PUBLIC_API]$(base_url_staging)'
+                echo '##vso[task.setvariable variable=NEXT_PUBLIC_BASE_URL]$(base_url_staging)'
             displayName: Set env for staging
 
           - task: PowerShell@2
@@ -60,7 +59,7 @@ stages:
             inputs:
               targetType: "inline"
               script: |
-                echo '##vso[task.setvariable variable=NEXT_PUBLIC_API]$(base_url)'
+                echo '##vso[task.setvariable variable=NEXT_PUBLIC_BASE_URL]$(base_url)'
             displayName: Set env for prod
 
           - task: Cache@2

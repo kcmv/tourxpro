@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -136,7 +135,7 @@ function Hero2() {
               </div>
               <div className="col-lg-2">
                 <div className="main-form-submit">
-                  <Link  href="/package">
+                  <Link href="/package">
                     <a onClick={scrollTop}>
                       <button type="submit">Find Now</button>
                     </a>
@@ -173,19 +172,11 @@ function Hero2() {
                           feugiat.
                         </p>
                         <div className="hero-btns">
-                          <Link
-                            onClick={scrollTop}
-                            href="/package-sidebar"
-                            className="button-fill-round"
-                          >
-                            <a>Book Now</a>
+                          <Link onClick={scrollTop} href="/package-sidebar">
+                            <a className="button-fill-round">Book Now</a>
                           </Link>
-                          <Link
-                            onClick={scrollTop}
-                            href="/package-details"
-                            className="button-fill-round"
-                          >
-                            <a>View Details</a>
+                          <Link onClick={scrollTop} href="/package-details">
+                            <a className="button-fill-round">View Details</a>
                           </Link>
                         </div>
                       </div>
@@ -224,19 +215,11 @@ function Hero2() {
                           feugiat.
                         </p>
                         <div className="hero-btns">
-                          <Link
-                            onClick={scrollTop}
-                            href="/package-details"
-                            className="button-fill-round"
-                          >
-                            <a>Book Now</a>
+                          <Link onClick={scrollTop} href="/package-details">
+                            <a className="button-fill-round">Book Now</a>
                           </Link>
-                          <Link
-                            onClick={scrollTop}
-                            href="/package-details"
-                            className="button-fill-round"
-                          >
-                            <a> View Details</a>
+                          <Link onClick={scrollTop} href="/package-details">
+                            <a className="button-fill-round"> View Details</a>
                           </Link>
                         </div>
                       </div>
@@ -276,19 +259,11 @@ function Hero2() {
                           feugiat.
                         </p>
                         <div className="hero-btns">
-                          <Link
-                            onClick={scrollTop}
-                            href="/package-details"
-                            className="button-fill-round"
-                          >
-                            <a>Book Now</a>
+                          <Link onClick={scrollTop} href="/package-details">
+                            <a className="button-fill-round">Book Now</a>
                           </Link>
-                          <Link
-                            onClick={scrollTop}
-                            href="/package-details"
-                            className="button-fill-round"
-                          >
-                            <a>View Details</a>
+                          <Link onClick={scrollTop} href="/package-details">
+                            <a className="button-fill-round">View Details</a>
                           </Link>
                         </div>
                       </div>

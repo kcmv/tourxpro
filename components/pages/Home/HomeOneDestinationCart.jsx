@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function HomeOneDestinationCart(props) {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -9,7 +10,7 @@ function HomeOneDestinationCart(props) {
         <div className="d-card-thumb">
           <Link href="/destination-details">
             <a onClick={scrollTop}>
-              <img src={props.image} alt="images" />
+              <img src={props.image} alt ="images"/>
             </a>
           </Link>
         </div>

@@ -3,13 +3,13 @@ import Footer from "../common/Footer";
 import Header from "../common/Header";
 import HomePage from "../pages/Home/HomePage";
 import Loading from "../common/Loading";
-function MainLayout() {
+function MainLayout({data}) {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     setLoad(true);
     setTimeout(() => {
       setLoad(false);
-    }, 700);
+    }, 3000);
   }, []);
   return (
     <>
@@ -17,7 +17,7 @@ function MainLayout() {
         <Loading />
       ) : (
         <>
-          <Header />
+          <Header data={data} />
           <HomePage />
           <Footer className="footer-area mt-110" />
         </>
@@ -27,10 +27,3 @@ function MainLayout() {
 }
 
 export default MainLayout;
-
-export async function getServerSideProps(context) {
-  console.log("server side call")
-  return {
-    props: {}, // will be passed to the page component as props
-  }
-}

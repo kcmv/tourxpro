@@ -4,7 +4,7 @@ import HomePageTwoHeader from "../common/HomePageTwoHeader";
 import Loading from "../common/Loading";
 import HomePageTwo from "../pages/homeTwo/HomePageTwo";
 
-function HomeageTowLayout() {
+function HomeageTowLayout({data}) {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     setLoad(true);
@@ -18,7 +18,7 @@ function HomeageTowLayout() {
         <Loading />
       ) : (
         <>
-          <HomePageTwoHeader />
+          <HomePageTwoHeader data={data}/>
           <HomePageTwo />
           <Footer className="footer-area mt-110" />
         </>

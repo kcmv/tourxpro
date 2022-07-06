@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function PackageArea() {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -29,7 +30,7 @@ function PackageArea() {
                     </a>
                   </Link>
                   <p className="card-lavel">
-                    <i className="bi bi-clock" />{" "}
+                    <i className="bi bi-clock" />
                     <span>3 Day &amp; 2 night</span>
                   </p>
                 </div>
@@ -94,7 +95,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -117,13 +117,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s3.png"
-                        }
-                        alt=""
-                      />
+                      <img src="/images/package/best-s3.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -150,7 +144,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -173,14 +166,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      {" "}
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s4.png"
-                        }
-                        alt=""
-                      />
+                      <img src="/images/package/best-s4.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -208,7 +194,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -231,14 +216,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      {" "}
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s5.png"
-                        }
-                        alt=""
-                      />
+                      <img src="/images/package/best-s5.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -266,7 +244,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -289,14 +266,7 @@ function PackageArea() {
                     onClick={scrollTop}
                   >
                     <a>
-                      {" "}
-                      <img
-                        src={
-                          process.env.NEXT_PUBLIC_BASE_URL +
-                          "/images/package/best-s6.png"
-                        }
-                        alt=""
-                      />
+                      <img src="/images/package/best-s6.png" alt="" />
                     </a>
                   </Link>
                   <p className="card-lavel">
@@ -323,7 +293,6 @@ function PackageArea() {
                         onClick={scrollTop}
                       >
                         <a>
-                          {" "}
                           Book Now <i className="bx bxs-right-arrow-alt" />
                         </a>
                       </Link>
@@ -343,9 +312,8 @@ function PackageArea() {
             <Link
               href={`${process.env.NEXT_PUBLIC_BASE_URL}/package`}
               onClick={scrollTop}
-              className="button-fill-primary"
             >
-              <a> View All Tours</a>
+              <a className="button-fill-primary"> View All Tours</a>
             </Link>
           </div>
         </div>

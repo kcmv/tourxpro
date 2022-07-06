@@ -1,10 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Navigation, Pagination } from "swiper";
+import Image from "next/image";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
@@ -66,14 +66,21 @@ function HeroArea() {
                         quis .
                       </p>
                       <div className="hero-btns">
-                        <Link href="/package" className="button-fill-primary">
-                          <a onClick={scrollTop}>View Adventure</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-fill-primary"
+                          >
+                            View Adventure
+                          </a>
                         </Link>
-                        <Link
-                          href="/package"
-                          className="button-outlined-primary"
-                        >
-                          <a onClick={scrollTop}>Take A Tour</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-outlined-primary"
+                          >
+                            Take A Tour
+                          </a>
                         </Link>
                       </div>
                     </div>
@@ -88,7 +95,6 @@ function HeroArea() {
                   <div className="hero-content-bg">
                     <div className="hero-content position-relative">
                       <h2 className="hero-title">
-                        {" "}
                         Move The <span>Earth</span>
                       </h2>
                       <p>
@@ -99,14 +105,21 @@ function HeroArea() {
                         quis .
                       </p>
                       <div className="hero-btns">
-                        <Link href="/package" className="button-fill-primary">
-                          <a onClick={scrollTop}>View Adventure</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-fill-primary"
+                          >
+                            View Adventure
+                          </a>
                         </Link>
-                        <Link
-                          href="/package"
-                          className="button-outlined-primary"
-                        >
-                          <a onClick={scrollTop}> Take A Tour</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-outlined-primary"
+                          >
+                            Take A Tour
+                          </a>
                         </Link>
                       </div>
                     </div>
@@ -131,14 +144,21 @@ function HeroArea() {
                         quis .
                       </p>
                       <div className="hero-btns">
-                        <Link href="/package" className="button-fill-primary">
-                          <a onClick={scrollTop}> View Adventure</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-fill-primary"
+                          >
+                            View Adventure
+                          </a>
                         </Link>
-                        <Link
-                          href="/package"
-                          className="button-outlined-primary"
-                        >
-                          <a onClick={scrollTop}>Take A Tour</a>
+                        <Link href="/package">
+                          <a
+                            onClick={scrollTop}
+                            className="button-outlined-primary"
+                          >
+                            Take A Tour
+                          </a>
                         </Link>
                       </div>
                     </div>
@@ -155,7 +175,7 @@ function HeroArea() {
             role="button"
             aria-label="Previous slide"
           >
-            <i className="bi bi-arrow-left" /> Prev{" "}
+            <i className="bi bi-arrow-left" /> Prev
           </div>
           <div
             className="hero-next"

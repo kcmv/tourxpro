@@ -10,7 +10,7 @@ function Breadcrumb(props) {
             <h2 className="breadcrumb-title">{props.name}</h2>
             <ul className="d-flex justify-content-center breadcrumb-items">
               <li className="breadcrumb-item">
-                <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}`}>
+                <Link href="/">
                   <a>Home</a>
                 </Link>
               </li>

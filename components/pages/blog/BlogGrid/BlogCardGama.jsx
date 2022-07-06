@@ -1,6 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
+import Image from "next/image";
 
 function BlogCardGama(props) {
   const scrollTop = () => {
@@ -11,7 +12,9 @@ function BlogCardGama(props) {
       <div className="blog-card-gamma">
         <div className="blog-thumb">
           <Link href="/blog-details">
-           <a> <img src={props.thumbImage} alt="BlogIMG" /></a>
+            <a>
+              <img src={props.thumbImage} alt="BlogIMG" />
+            </a>
           </Link>
           <div className="blog-lavel">
             <a href="#">Tourist</a>
@@ -28,10 +31,7 @@ function BlogCardGama(props) {
             </a>
           </div>
           <h4 className="blog-title">
-            <Link
-              onClick={scrollTop}
-              href="/blog-details"
-            >
+            <Link onClick={scrollTop} href="/blog-details">
               {props.title}
             </Link>
           </h4>

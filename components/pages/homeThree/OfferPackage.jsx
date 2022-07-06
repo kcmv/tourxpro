@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const scrollTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -20,12 +21,11 @@ function OfferPackage() {
             </div>
             <div className="col-lg-6 col-sm-10">
               <div className="package-btn text-lg-end">
-                <a
-                  href="package.html"
-                  className="button-fill-primary all-package-btn"
-                >
-                  View All Tour
-                </a>
+                <Link href="/package">
+                  <a className="button-fill-primary all-package-btn">
+                    View All Tour
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -145,9 +145,9 @@ function OfferPackage() {
                     </div>
                   </div>
                   <div className="package-page-btn text-center mt-60">
-                    <a href="package.html" className="button-fill-round">
-                      View All Offer
-                    </a>
+                    <Link href="/package">
+                      <a className="button-fill-round"> View All Offer</a>
+                    </Link>
                   </div>
                 </div>
                 <div
@@ -186,12 +186,8 @@ function OfferPackage() {
                     </div>
                   </div>
                   <div className="package-page-btn text-center mt-60">
-                    <Link
-                      href="/package"
-                      onClick={scrollTop}
-                      className="button-fill-round"
-                    >
-                      <a>View All Offer</a>
+                    <Link href="/package" onClick={scrollTop}>
+                      <a className="button-fill-round">View All Offer</a>
                     </Link>
                   </div>
                 </div>
@@ -239,12 +235,8 @@ function OfferPackage() {
                     </div>
                   </div>
                   <div className="package-page-btn text-center mt-60">
-                    <Link
-                      href="/package"
-                      onClick={scrollTop}
-                      className="button-fill-round"
-                    >
-                      <a>View All Offer</a>
+                    <Link href="/package" onClick={scrollTop}>
+                      <a className="button-fill-round">View All Offer</a>
                     </Link>
                   </div>
                 </div>
@@ -264,7 +256,10 @@ function OfferPackageCardBeta(props) {
         <div className="package-thumb">
           <Link href="/package-details" onClick={scrollTop}>
             <a>
-              <img src={`${props.image}`} alt="" />
+              <img
+                src={props.image}
+                alt=""
+              />
             </a>
           </Link>
           <p className="card-lavel">

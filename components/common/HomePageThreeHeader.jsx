@@ -1,21 +1,16 @@
 import React, { useEffect, useReducer } from "react";
 import { useState } from "react";
+import Head from "next/head";
 import Link from "next/link";
-
-function HomePageThreeHeader() {
+import Image from "next/image";
+function HomePageThreeHeader({ data }) {
+  const { title, keywords, description, image } = data;
   const [searchActive, setSearchActive] = useState(0);
   const [catagoryActive, setCatagoryActive] = useState(0);
   const [userDropdown, setuserDropdown] = useState(0);
   const [mobileSideberMenu, setMobileSideberMenu] = useState(0);
 
   useEffect(() => {
-    const isSticky = (e) => {
-      const header = document.querySelector("header");
-      const scrollTop = window.scrollY;
-      scrollTop >= 200
-        ? header.classList.add("sticky")
-        : header.classList.remove("sticky");
-    };
     // Add scroll event when the component is loaded
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -23,13 +18,13 @@ function HomePageThreeHeader() {
     };
   });
   /* Method that will fix header after a specific scrollable */
-  // const isSticky = (e) => {
-  //   const header = document.querySelector("header");
-  //   const scrollTop = window.scrollY;
-  //   scrollTop >= 200
-  //     ? header.classList.add("sticky")
-  //     : header.classList.remove("sticky");
-  // };
+  const isSticky = (e) => {
+    const header = document.querySelector("header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 200
+      ? header.classList.add("sticky")
+      : header.classList.remove("sticky");
+  };
 
   const initialState = { activeMenu: "" };
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -83,6 +78,32 @@ function HomePageThreeHeader() {
   };
   return (
     <>
+      <Head>
+        <title>{`${title} | TourXPro - Travel Tourism Agency`}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+          key="canonical"
+        />
+        <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="keywords" content={keywords} key="keywords" />
+        <meta name="description" content={description} key="desc" />
+        <meta property="og:title" content="TourXPro - Travels Tourism Agency" />
+        <meta property="og:image" content={image} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="TourXPro - Travels Tourism Agency"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="ROBOTS" content="FOLLOW,INDEX" />
+      </Head>
       <div
         className={searchActive === 1 ? "mobile-search slide" : "mobile-search"}
       >
@@ -122,7 +143,12 @@ function HomePageThreeHeader() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate1.svg" alt="" />
+                    <img
+                      src="/images/icons/cate1.svg"
+                      
+                      
+                      alt=""
+                    />
                   </div>
                   <h5>Adventure</h5>
                 </a>
@@ -132,7 +158,12 @@ function HomePageThreeHeader() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate2.svg" alt="" />
+                    <img
+                      src="/images/icons/cate2.svg"
+                      
+                      
+                      alt=""
+                    />
                   </div>
                   <h5>Group Tour</h5>
                 </a>
@@ -143,7 +174,12 @@ function HomePageThreeHeader() {
                 <a onClick={scrollTop}>
                   <a>
                     <div className="cate-icon mx-auto">
-                      <img src="/images/icons/cate3.svg" alt="" />
+                      <img
+                      src="/images/icons/cate3.svg"
+                      
+                      
+                      alt=""
+                    />
                     </div>
                     <h5>Couple Tour</h5>
                   </a>
@@ -154,7 +190,12 @@ function HomePageThreeHeader() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate4.svg" alt="" />
+                    <img
+                      src="/images/icons/cate4.svg"
+                      
+                      
+                      alt=""
+                    />
                   </div>
                   <h5>Single Tour</h5>
                 </a>
@@ -164,7 +205,12 @@ function HomePageThreeHeader() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate5.svg" alt="" />
+                    <img
+                      src="/images/icons/cate5.svg"
+                      
+                      
+                      alt=""
+                    />
                   </div>
                   <h5>Honeymoon</h5>
                 </a>
@@ -174,7 +220,12 @@ function HomePageThreeHeader() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate6.svg" alt="" />
+                    <img
+                      src="/images/icons/cate6.svg"
+                      
+                      
+                      alt=""
+                    />
                   </div>
                   <h5>Sea Beach</h5>
                 </a>
@@ -184,7 +235,12 @@ function HomePageThreeHeader() {
               <Link className="category-box" href="/package">
                 <a onClick={scrollTop}>
                   <div className="cate-icon mx-auto">
-                    <img src="/images/icons/cate7.svg" alt="" />
+                    <img
+                      src="/images/icons/cate7.svg"
+                      
+                      
+                      alt=""
+                    />
                   </div>
                   <h5>Mountain Tour</h5>
                 </a>
@@ -200,7 +256,12 @@ function HomePageThreeHeader() {
               <div className="col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
                 <div className="nav-logo d-flex justify-content-between align-items-center">
                   <a href="/">
-                    <img src="/images/logo-w.png" alt="logo" />
+                    <img
+                      src="/images/logo-w.png"
+                      
+                      
+                      alt="logo"
+                    />
                   </a>
                   <div className="mobile-menu d-flex ">
                     <div className="d-flex align-items-center">
@@ -239,7 +300,7 @@ function HomePageThreeHeader() {
                         </div>
                       </div>
                       <a
-                        href="3"
+                        href="#"
                         className={
                           mobileSideberMenu === 1
                             ? "hamburger d-block d-xl-none h-active"
@@ -263,7 +324,12 @@ function HomePageThreeHeader() {
                 >
                   <div className="inner-logo d-xl-none text-center">
                     <a href="#">
-                      <img src="/images/logo.png" alt="" />
+                      <img
+                      src="/images/logo.png"
+                      
+                      
+                      alt=""
+                    />
                     </a>
                   </div>
                   <ul>
@@ -271,7 +337,9 @@ function HomePageThreeHeader() {
                       className="has-child-menu"
                       onClick={() => dispatch({ type: "homeOne" })}
                     >
-                      <a href="#">Home</a>
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
                       <i className="fl flaticon-plus">+</i>
                       <ul
                         className={
@@ -445,11 +513,11 @@ function HomePageThreeHeader() {
                   </ul>
                   <div className="inner-contact-options d-xl-none">
                     <div className="contact-box-inner">
-                      <i className="bi bi-telephone-fill" />{" "}
+                      <i className="bi bi-telephone-fill" />
                       <a href="tel:+17632275032">+1 763-227-5032</a>
                     </div>
                     <div className="contact-box-inner">
-                      <i className="bi bi-envelope-fill" />{" "}
+                      <i className="bi bi-envelope-fill" />
                       <a href="mailto:info@example.com">info@example.com</a>
                     </div>
                   </div>

@@ -4,7 +4,7 @@ import HomePageThreeHeader from "../common/HomePageThreeHeader";
 import Loading from "../common/Loading";
 import HomePage3 from "../pages/homeThree/HomePage3";
 
-function HomethreeLayout() {
+function HomethreeLayout({data}) {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     setLoad(true);
@@ -18,7 +18,7 @@ function HomethreeLayout() {
         <Loading />
       ) : (
         <>
-          <HomePageThreeHeader />
+          <HomePageThreeHeader data={data}/>
           <HomePage3 />
           <Footer className="footer-area" />
         </>

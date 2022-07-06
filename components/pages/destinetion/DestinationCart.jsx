@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function DestinationCart(props) {
   const scrollTop = () => {
@@ -9,7 +10,7 @@ function DestinationCart(props) {
     <>
       <div className="destination-card-style-two mb-0">
         <div className="d-card-thumb">
-          <img src={props.image} alt="CartIMG" />
+          <img src={props.image}  alt="CartIMG" />
         </div>
         <div className="d-card-content">
           <h4 className="destination-title">
