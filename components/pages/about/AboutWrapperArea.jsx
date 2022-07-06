@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
-
-const DynamicVideoModal = dynamic(() => import(ModalVideo), {
-  suspense: true,
-  ssr: false
-});
 
 function AboutWrapperArea() {
   const [isOpen, setOpen] = useState(false);
@@ -21,7 +14,7 @@ function AboutWrapperArea() {
               <div className="col-lg-6">
                 <div className="about-tab-image-grid text-center">
                   <div className="about-video d-inline-block">
-                    <img src="/images/about/about-g2.png" alt="aboutIMG" />
+                    <img src="/images/about/about-g2.png"   alt="aboutIMG" />
                     <div className="video-overlay">
                       <div className="play-icon video-popup">
                         <i
@@ -34,12 +27,12 @@ function AboutWrapperArea() {
                   <div className="row float-images g-4">
                     <div className="col-lg-6 col-md-6 col-sm-6">
                       <div className="about-image">
-                        <img src="/images/about/about-g1.png" alt="aboutIMG" />
+                        <img src="/images/about/about-g1.png"  alt="aboutIMG" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6">
                       <div className="about-image">
-                        <img src="/images/about/about-g3.png" alt="aboutIMG" />
+                        <img src="/images/about/about-g3.png"  alt="aboutIMG" />
                       </div>
                     </div>
                   </div>
@@ -216,26 +209,20 @@ function AboutWrapperArea() {
             </div>
             <div className="col-lg-6">
               <div className="about-image-group mt-5 mt-lg-0">
-                <img
-                  src="/images/about/about-image-group2.png"
-                  className="img-fluid"
-                  alt="aboutIMG"
-                />
+                <img src="/images/about/about-image-group2.png" className="img-fluid" alt="aboutIMG" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <React.Fragment>
-        <Suspense fallback={`Loading...`}>
-          <DynamicVideoModal
-            channel="youtube"
-            autoplay
-            isOpen={isOpen}
-            videoId="3SsK-cxlj_w"
-            onClose={() => setOpen(false)}
-          />
-        </Suspense>
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen}
+          videoId="3SsK-cxlj_w"
+          onClose={() => setOpen(false)}
+        />
       </React.Fragment>
     </>
   );
