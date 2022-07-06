@@ -6,6 +6,7 @@ import "react-modal-video/css/modal-video.css";
 
 const DynamicVideoModal = dynamic(() => import(ModalVideo), {
   suspense: true,
+  ssr: false
 });
 
 function AboutWrapperArea() {
