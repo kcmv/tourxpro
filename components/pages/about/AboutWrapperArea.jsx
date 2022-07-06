@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";

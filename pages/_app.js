@@ -4,9 +4,9 @@ import "../styles/index.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-      <SimpleReactLightbox>
-        <Component {...pageProps} />
-      </SimpleReactLightbox>
+    <SimpleReactLightbox>
+      <Component {...pageProps} />
+    </SimpleReactLightbox>
   );
 }
 export default MyApp;
