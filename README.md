@@ -1,6 +1,6 @@
 # TourX Pro - Travel Tourism Agency Template NextJS
 
-[![Build Status](https://dev.azure.com/CharlieMagne/Front%20End%20Boilerplate/_apis/build/status/kcmv.tourxpro?branchName=master)](https://dev.azure.com/CharlieMagne/Front%20End%20Boilerplate/_apis/build/status/kcmv.tourxpro?branchName=master)
+[![Build Status](https://dev.azure.com/CharlieMagne/Front%20End%20Boilerplate/_apis/build/status/kcmv.tourxpro?branchName=master)](https://dev.azure.com/CharlieMagne/Front%20End%20Boilerplate/_build/latest?definitionId=244&branchName=master)
 
 Migration of a Create-React-App template to NextJS with CI/CD using Azure DevOps
 
