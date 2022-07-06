@@ -10,4 +10,4 @@ Migration steps:
 4. Use Image next component (still converting)
 
 
-Link - https://tourxpro-staging.azurewebsites.net
+Link - https://tourxpro.azurewebsites.net
