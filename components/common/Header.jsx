@@ -110,6 +110,7 @@ function Header({ data }) {
           href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
           key="canonical"
         />
+        <link rel="icon" href="../../public/favicon.ico" />
         <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
         <meta name="keywords" content={keywords} key="keywords" />
         <meta name="description" content={description} key="desc" />
