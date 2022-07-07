@@ -47,7 +47,7 @@ stages:
             displayName: "Install Node.js"
 
           - task: PowerShell@2
-            condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/development'))
+            condition: eq(variables['Build.SourceBranch'], 'refs/heads/development'))
             inputs:
               targetType: "inline"
               script: |
@@ -55,7 +55,7 @@ stages:
             displayName: Set env for staging
 
           - task: PowerShell@2
-            condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+            condition: eq(variables['Build.SourceBranch'], 'refs/heads/master'))
             inputs:
               targetType: "inline"
               script: |
