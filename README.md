@@ -13,5 +13,3 @@ Migration steps:
 3. Creating Routes and Linking (Remove react-router-dom and update links)
 4. Use Image next component (still converting)
 
-
-Link - https://tourxpro.azurewebsites.net
